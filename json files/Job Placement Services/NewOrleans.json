@@ -1,0 +1,643 @@
+{
+  "search_metadata": {
+    "id": "639016fe47ccf1cc94b91746",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/9643f8b41f871028/639016fe47ccf1cc94b91746.json",
+    "created_at": "2022-12-07 04:30:54 UTC",
+    "processed_at": "2022-12-07 04:30:54 UTC",
+    "google_maps_url": "https://www.google.com/maps/search/@29.951065,-90.071533,14z/job+placement+services?hl=en",
+    "raw_html_file": "https://serpapi.com/searches/3195d162199a8fc0/639016fe47ccf1cc94b91746.html",
+    "total_time_taken": 6.76
+  },
+  "search_parameters": {
+    "engine": "google_maps",
+    "type": "search",
+    "q": "job placement services",
+    "ll": "@29.951065,-90.071533,14z",
+    "google_domain": "google.com",
+    "hl": "en"
+  },
+  "search_information": {
+    "local_results_state": "Results for exact spelling",
+    "query_displayed": "job placement services"
+  },
+  "local_results": [
+    {
+      "position": 1,
+      "title": "Express Employment Professionals",
+      "place_id": "ChIJmylm9ImlIIYRxhLy1AtRApM",
+      "data_id": "0x8620a589f466299b:0x9302510bd4f212c6",
+      "data_cid": "10593118384787952326",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a589f466299b%3A0x9302510bd4f212c6&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a589f466299b%3A0x9302510bd4f212c6&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.959903299999997,
+        "longitude": -90.10218359999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a589f466299b%3A0x9302510bd4f212c6%218m2%213d29.959903299999997%214d-90.10218359999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.9,
+      "reviews": 36,
+      "type": "Employment agency",
+      "address": "1000 S Norman C Francis Parkway, New Orleans, LA 70125",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(504) 484-0494",
+      "website": "https://www.expresspros.com/neworleansla/?utm_source=gmb&utm_medium=organic&utm_campaign=Qiigo",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipM_n_-fSWmc1Q1fOiLzy6YqQE1PPoE5VVxTZsVD=w163-h92-k-no"
+    },
+    {
+      "position": 2,
+      "title": "Strategic Recruitment Solutions",
+      "place_id": "ChIJnXVPtOClIIYR9bk6vjaJK1g",
+      "data_id": "0x8620a5e0b44f759d:0x582b8936be3ab9f5",
+      "data_cid": "6353322567548975605",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a5e0b44f759d%3A0x582b8936be3ab9f5&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a5e0b44f759d%3A0x582b8936be3ab9f5&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.9529352,
+        "longitude": -90.0791663
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a5e0b44f759d%3A0x582b8936be3ab9f5%218m2%213d29.9529352%214d-90.0791663&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 5,
+      "reviews": 23,
+      "type": "Employment agency",
+      "address": "1555 Poydras St #440, New Orleans, LA 70112",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–6PM",
+        "wednesday": "9AM–6PM",
+        "thursday": "9AM–6PM",
+        "friday": "9AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–6PM"
+      },
+      "phone": "(888) 366-6508",
+      "website": "https://www.strategicrecruitmentsolutions.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMeEKaEi0CCMeKsDXddAwAHxp9ewhEr4wHapOlp=w126-h92-k-no"
+    },
+    {
+      "position": 3,
+      "title": "Labor Staffing of New Orleans",
+      "place_id": "ChIJT6ZunfSlIIYRg9wAEypme6c",
+      "data_id": "0x8620a5f49d6ea64f:0xa77b662a1300dc83",
+      "data_cid": "12068351957362859139",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a5f49d6ea64f%3A0xa77b662a1300dc83&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a5f49d6ea64f%3A0xa77b662a1300dc83&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.968215299999997,
+        "longitude": -90.09182369999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a5f49d6ea64f%3A0xa77b662a1300dc83%218m2%213d29.968215299999997%214d-90.09182369999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 5,
+      "reviews": 411,
+      "type": "Employment agency",
+      "address": "3108 Canal St, New Orleans, LA 70119",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(504) 362-5544",
+      "website": "http://www.laborstaffing.com/?utm_source=gmb&utm_medium=organic&utm_campaign=Qiigo",
+      "user_review": "\"Quick and easy job placements. \"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMb4kyXl2g7PEs1i-IKl6hhGGLKwVoYWZ1e53uN=w138-h92-k-no"
+    },
+    {
+      "position": 4,
+      "title": "ADEETA Corporate Staffing",
+      "place_id": "ChIJEQ1Jv3SmIIYRgGHumXmBW2Y",
+      "data_id": "0x8620a674bf490d11:0x665b817999ee6180",
+      "data_cid": "7375631174022881664",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a674bf490d11%3A0x665b817999ee6180&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a674bf490d11%3A0x665b817999ee6180&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 30.0329964,
+        "longitude": -89.8825634
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a674bf490d11%3A0x665b817999ee6180%218m2%213d30.0329964%214d-89.8825634&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.5,
+      "reviews": 15,
+      "type": "Employment agency",
+      "open_state": "Closed ⋅ Opens 7AM Wed",
+      "hours": "Closed ⋅ Opens 7AM Wed",
+      "operating_hours": {
+        "tuesday": "7AM–4PM",
+        "wednesday": "7AM–4PM",
+        "thursday": "7AM–4PM",
+        "friday": "7AM–4PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "7AM–4PM"
+      },
+      "phone": "(504) 523-1786",
+      "website": "http://www.adeeta.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOdUK1sZcFlMwWmQ58V5WcPKywnexMiebunPO2M=w122-h92-k-no"
+    },
+    {
+      "position": 5,
+      "title": "Insight Global",
+      "place_id": "ChIJfcFBXd6nIIYRHm4KwMHBseo",
+      "data_id": "0x8620a7de5d41c17d:0xeab1c1c1c00a6e1e",
+      "data_cid": "16911511113647681054",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a7de5d41c17d%3A0xeab1c1c1c00a6e1e&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a7de5d41c17d%3A0xeab1c1c1c00a6e1e&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.952036699999997,
+        "longitude": -90.0703336
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a7de5d41c17d%3A0xeab1c1c1c00a6e1e%218m2%213d29.952036699999997%214d-90.0703336&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 5,
+      "reviews": 6,
+      "type": "Temp agency",
+      "address": "201 St Charles Ave Suite 2405, New Orleans, LA 70170",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(855) 485-8732",
+      "website": "https://insightglobal.com/locations/louisiana/staffing-agency-fort-new-orleans-la/?utm_source=gmb&utm_medium=Yext",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPvOacApbfCXrEjBBOCH73KiBWHwBcuVfCiupR3=w92-h92-k-no"
+    },
+    {
+      "position": 6,
+      "title": "Global Staffing Solutions",
+      "place_id": "ChIJxXogTYqlIIYRRiAFeiFltgM",
+      "data_id": "0x8620a58a4d207ac5:0x3b665217a052046",
+      "data_cid": "267512422330605638",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a58a4d207ac5%3A0x3b665217a052046&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a58a4d207ac5%3A0x3b665217a052046&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.969095799999998,
+        "longitude": -90.0933969
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a58a4d207ac5%3A0x3b665217a052046%218m2%213d29.969095799999998%214d-90.0933969&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 2.7,
+      "reviews": 63,
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "3300 Canal St, New Orleans, LA 70119",
+      "open_state": "Closed ⋅ Opens 10AM Wed",
+      "hours": "Closed ⋅ Opens 10AM Wed",
+      "operating_hours": {
+        "tuesday": "10AM–4PM",
+        "wednesday": "10AM–4PM",
+        "thursday": "10AM–4PM",
+        "friday": "10AM–4PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "10AM–4PM"
+      },
+      "phone": "(504) 324-9180",
+      "website": "http://www.global-staffingsolutions.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNuuouNq8TN_U0lnXMZkCPDqiIwJkDFrpM42hAq=w80-h106-k-no"
+    },
+    {
+      "position": 7,
+      "title": "Talentheed, Inc.",
+      "place_id": "ChIJi5gL18anIIYR2qN1FX7ZQe0",
+      "data_id": "0x8620a7c6d70b988b:0xed41d97e1575a3da",
+      "data_cid": "17096184796024251354",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a7c6d70b988b%3A0xed41d97e1575a3da&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a7c6d70b988b%3A0xed41d97e1575a3da&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.952036699999997,
+        "longitude": -90.0703336
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a7c6d70b988b%3A0xed41d97e1575a3da%218m2%213d29.952036699999997%214d-90.0703336&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 2.8,
+      "reviews": 26,
+      "type": "Employment agency",
+      "address": "201 St Charles Ave #3011, New Orleans, LA 70170",
+      "open_state": "Closed ⋅ Opens 9:30AM Wed",
+      "hours": "Closed ⋅ Opens 9:30AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–6PM",
+        "wednesday": "9:30AM–6PM",
+        "thursday": "9AM–6PM",
+        "friday": "9AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–6PM"
+      },
+      "phone": "(985) 355-5180",
+      "website": "https://www.talentheedinc.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNcHVhz6NINwqfTIC7PeuN1joP3UPlXwWvlHWEP=w383-h92-k-no"
+    },
+    {
+      "position": 8,
+      "title": "Kelly Services",
+      "place_id": "ChIJGxGcueClIIYRXb9d-peiVFk",
+      "data_id": "0x8620a5e0b99c111b:0x5954a297fa5dbf5d",
+      "data_cid": "6436948541043490653",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a5e0b99c111b%3A0x5954a297fa5dbf5d&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a5e0b99c111b%3A0x5954a297fa5dbf5d&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.9528066,
+        "longitude": -90.0782558
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a5e0b99c111b%3A0x5954a297fa5dbf5d%218m2%213d29.9528066%214d-90.0782558&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.2,
+      "reviews": 18,
+      "type": "Employment agency",
+      "address": "1515 Poydras St #2280, New Orleans, LA 70112",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–5PM",
+        "wednesday": "8:30AM–5PM",
+        "thursday": "8:30AM–5PM",
+        "friday": "8:30AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–5PM"
+      },
+      "phone": "(504) 529-1451",
+      "website": "https://www.kellyservices.us/?utm_source=gmb-listing&utm_medium=organic&utm_campaign=all_both_local-listings&utm_content=neworleans-la",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=f_jxtgxq2ThA2ltfZFI0pQ&cb_client=search.gws-prod.gps&w=80&h=92&yaw=264.6561&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 9,
+      "title": "The Personnel Consulting Group",
+      "place_id": "ChIJgzYJr72vIIYRZO4EhLPvs1A",
+      "data_id": "0x8620afbdaf093683:0x50b3efb38404ee64",
+      "data_cid": "5815255098158542436",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620afbdaf093683%3A0x50b3efb38404ee64&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620afbdaf093683%3A0x50b3efb38404ee64&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.999262199999997,
+        "longitude": -90.12421549999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620afbdaf093683%3A0x50b3efb38404ee64%218m2%213d29.999262199999997%214d-90.12421549999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.9,
+      "reviews": 76,
+      "type": "Employment agency",
+      "address": "110 Veterans Memorial Blvd, Metairie, LA 70005",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–5PM",
+        "wednesday": "8:30AM–5PM",
+        "thursday": "8:30AM–5PM",
+        "friday": "8:30AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–5PM"
+      },
+      "phone": "(504) 581-7800",
+      "website": "http://www.pcgla.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipN5uOfr8WEw0iHQBEsd4f_q4q__b_IF-qRbZarO=w163-h92-k-no"
+    },
+    {
+      "position": 10,
+      "title": "Cabildo Staffing",
+      "place_id": "ChIJGxGcueClIIYRgg9rUIq-GCI",
+      "data_id": "0x8620a5e0b99c111b:0x2218be8a506b0f82",
+      "data_cid": "2456923097994563458",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a5e0b99c111b%3A0x2218be8a506b0f82&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a5e0b99c111b%3A0x2218be8a506b0f82&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.952576399999998,
+        "longitude": -90.07846909999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a5e0b99c111b%3A0x2218be8a506b0f82%218m2%213d29.952576399999998%214d-90.07846909999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.8,
+      "reviews": 4,
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "1515 Poydras St #2270, New Orleans, LA 70112",
+      "open_state": "Closed ⋅ Opens 7:30AM Wed",
+      "hours": "Closed ⋅ Opens 7:30AM Wed",
+      "operating_hours": {
+        "tuesday": "7:30AM–4:30PM",
+        "wednesday": "7:30AM–4:30PM",
+        "thursday": "7:30AM–4:30PM",
+        "friday": "7:30AM–4:30PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "7:30AM–4:30PM"
+      },
+      "phone": "(504) 524-8650",
+      "website": "http://www.cabildostaffing.com/",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gLHnKvNJ6AzzAlR-bPSTDQ&cb_client=search.gws-prod.gps&w=80&h=92&yaw=108.52243&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 11,
+      "title": "Delta Personnel",
+      "place_id": "ChIJ1SrscY2vIIYRCKGZQq4hGyI",
+      "data_id": "0x8620af8d71ec2ad5:0x221b21ae4299a108",
+      "data_cid": "2457595053986128136",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620af8d71ec2ad5%3A0x221b21ae4299a108&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620af8d71ec2ad5%3A0x221b21ae4299a108&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.9726565,
+        "longitude": -90.1518028
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620af8d71ec2ad5%3A0x221b21ae4299a108%218m2%213d29.9726565%214d-90.1518028&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.6,
+      "reviews": 35,
+      "type": "Temp agency",
+      "address": "2709 L and A Rd, Metairie, LA 70001",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(504) 833-5200",
+      "website": "http://www.deltapersonnel.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOFTWGAq5xFv751bA_FgWIDaVOl36DpNeAAlKBM=w80-h106-k-no"
+    },
+    {
+      "position": 12,
+      "title": "Spherion",
+      "place_id": "ChIJB2Bdal2wIIYRHHY9qkY1pWk",
+      "data_id": "0x8620b05d6a5d6007:0x69a53546aa3d761c",
+      "data_cid": "7612549322759829020",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620b05d6a5d6007%3A0x69a53546aa3d761c&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620b05d6a5d6007%3A0x69a53546aa3d761c&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.9980643,
+        "longitude": -90.1792772
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620b05d6a5d6007%3A0x69a53546aa3d761c%218m2%213d29.9980643%214d-90.1792772&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.4,
+      "reviews": 39,
+      "type": "Employment agency",
+      "address": "4300 S I-10 Service Rd W Suite 115, Metairie, LA 70001",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(504) 455-6565",
+      "website": "https://www.spherion.com/neworleans",
+      "user_review": "\"... would easily recommend them for anyone looking for job placement. \"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipM21haF24SVLCcC8zbI9PMGtITKUlhehRiECHO1=w163-h92-k-no"
+    },
+    {
+      "position": 13,
+      "title": "Express Employment Professionals",
+      "place_id": "ChIJ2Th9VqSwIIYR5gMsj3CgQig",
+      "data_id": "0x8620b0a4567d38d9:0x2842a0708f2c03e6",
+      "data_cid": "2901057515278828518",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620b0a4567d38d9%3A0x2842a0708f2c03e6&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620b0a4567d38d9%3A0x2842a0708f2c03e6&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.9821147,
+        "longitude": -90.2121774
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620b0a4567d38d9%3A0x2842a0708f2c03e6%218m2%213d29.9821147%214d-90.2121774&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.5,
+      "reviews": 107,
+      "type": "Employment agency",
+      "address": "701 David Dr A, Metairie, LA 70003",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(504) 733-0000",
+      "website": "https://www.expresspros.com/metairiela/?utm_source=gmb&utm_medium=organic&utm_campaign=Qiigo",
+      "user_review": "\"Great people and a wonderful place to get a job placement for anyone. \"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPpb1v1NtUoi2dH7MLXDo8E99earObX7BYEaDg=w81-h92-k-no"
+    },
+    {
+      "position": 14,
+      "title": "Enterprise Staffing",
+      "place_id": "ChIJSUmO0ZmlIIYRzq9vTb5iu0M",
+      "data_id": "0x8620a599d18e4949:0x43bb62be4d6fafce",
+      "data_cid": "4880603190668537806",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a599d18e4949%3A0x43bb62be4d6fafce&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a599d18e4949%3A0x43bb62be4d6fafce&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.9938188,
+        "longitude": -90.1581783
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a599d18e4949%3A0x43bb62be4d6fafce%218m2%213d29.9938188%214d-90.1581783&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.9,
+      "reviews": 48,
+      "type": "Temp agency",
+      "address": "2237 N Hullen St Suite 302, Metairie, LA 70001",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–4PM",
+        "wednesday": "8AM–4PM",
+        "thursday": "8AM–4PM",
+        "friday": "8AM–4PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–4PM"
+      },
+      "phone": "(504) 900-1157",
+      "website": "https://enterprisestaffing.com/",
+      "user_review": "\"Enterprise staffing did an excellent job providing people with the ... \"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipO9k8KWA43gmlJ3SHCjEwQwCkdofDEtsObinIR6=w122-h92-k-no"
+    },
+    {
+      "position": 15,
+      "title": "Orleans American Job Center -TCA",
+      "place_id": "ChIJad4_eJmlIIYRwv_dReTJmbI",
+      "data_id": "0x8620a599783fde69:0xb299c9e445ddffc2",
+      "data_cid": "12869539392449806274",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a599783fde69%3A0xb299c9e445ddffc2&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a599783fde69%3A0xb299c9e445ddffc2&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.956019899999998,
+        "longitude": -90.1051152
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a599783fde69%3A0xb299c9e445ddffc2%218m2%213d29.956019899999998%214d-90.1051152&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3,
+      "reviews": 2,
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "1424 S Norman C Francis Parkway, New Orleans, LA 70125",
+      "phone": "(504) 302-1124",
+      "website": "https://www.tca-nola.org/",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=i0AF_NrpYIumjZl1l3pBNA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=128.22484&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 16,
+      "title": "Strategic Staffing Solutions",
+      "place_id": "ChIJd5TB7t-lIIYR6Dj_W2_Zo5g",
+      "data_id": "0x8620a5dfeec19477:0x98a3d96f5bff38e8",
+      "data_cid": "10998873787276933352",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a5dfeec19477%3A0x98a3d96f5bff38e8&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a5dfeec19477%3A0x98a3d96f5bff38e8&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.9498678,
+        "longitude": -90.075485
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a5dfeec19477%3A0x98a3d96f5bff38e8%218m2%213d29.9498678%214d-90.075485&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 5,
+      "reviews": 2,
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "1100 Poydras St #2605, New Orleans, LA 70163",
+      "phone": "(504) 524-2040",
+      "website": "http://www.strategicstaff.com/",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=jlkdns8zM_NBn5JlJBoJzQ&cb_client=search.gws-prod.gps&w=80&h=92&yaw=301.90237&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 17,
+      "title": "Task Impetus Inc.",
+      "place_id": "ChIJLzvju3unIIYRQq8k1D8Bp6c",
+      "data_id": "0x8620a77bbbe33b2f:0xa7a7013fd424af42",
+      "data_cid": "12080625899098386242",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a77bbbe33b2f%3A0xa7a7013fd424af42&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a77bbbe33b2f%3A0xa7a7013fd424af42&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.950990599999997,
+        "longitude": -90.07655799999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a77bbbe33b2f%3A0xa7a7013fd424af42%218m2%213d29.950990599999997%214d-90.07655799999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.8,
+      "reviews": 6,
+      "type": "Employment agency",
+      "address": "1236 Poydras St Ste - 301A, New Orleans, LA 70113",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–6PM",
+        "wednesday": "9AM–6PM",
+        "thursday": "9AM–6PM",
+        "friday": "9AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–6PM"
+      },
+      "phone": "(504) 420-7800",
+      "website": "https://www.taskimpetusinc.com/",
+      "user_review": "\"... a wonderful experience working with Taskinpetus for job placement. \"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNjbbUsrhERHqUOiOwxhKD4Foss9iYavCPI-bce=w128-h92-k-no"
+    },
+    {
+      "position": 18,
+      "title": "Recruit Staff Hire",
+      "place_id": "ChIJ0by0oJKxIIYRLXFn_q9coWg",
+      "data_id": "0x8620b192a0b4bcd1:0x68a15caffe67712d",
+      "data_cid": "7539409162152145197",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620b192a0b4bcd1%3A0x68a15caffe67712d&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620b192a0b4bcd1%3A0x68a15caffe67712d&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.997034,
+        "longitude": -90.1613737
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620b192a0b4bcd1%3A0x68a15caffe67712d%218m2%213d29.997034%214d-90.1613737&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.6,
+      "reviews": 11,
+      "type": "Temp agency",
+      "address": "3540 S I-10 Service Rd W Suite 100, Metairie, LA 70001",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–4:30PM",
+        "wednesday": "8AM–4:30PM",
+        "thursday": "8AM–4:30PM",
+        "friday": "8AM–4PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–4:30PM"
+      },
+      "phone": "(504) 766-9505",
+      "website": "https://recruitstaffhire.com/",
+      "user_review": "\"If you need help for job placement I would recommend them 100% of the time. \"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOVt98GeAxT815I_1JFa4EVuLiLLGlMDz8WZ-C0=w80-h99-k-no"
+    },
+    {
+      "position": 19,
+      "title": "Louisiana State-Personnel",
+      "place_id": "ChIJL_N5ZuGlIIYRGXrrN27EFeE",
+      "data_id": "0x8620a5e16679f32f:0xe115c46e37eb7a19",
+      "data_cid": "16219085610708335129",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a5e16679f32f%3A0xe115c46e37eb7a19&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a5e16679f32f%3A0xe115c46e37eb7a19&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.9562562,
+        "longitude": -90.0777975
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a5e16679f32f%3A0xe115c46e37eb7a19%218m2%213d29.9562562%214d-90.0777975&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "Interim LSU Hospital Butterworth Building, 1541 Tulane Ave, New Orleans, LA 70112",
+      "phone": "(504) 903-3544",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=XnSG0RgbIL_JrYHqAf--VQ&cb_client=search.gws-prod.gps&w=80&h=92&yaw=33.33246&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 20,
+      "title": "Environmental Job Service, LLC.",
+      "place_id": "ChIJkbDnm9OnIIYR0JSlZi3XRXk",
+      "data_id": "0x8620a7d39be7b091:0x7945d72d66a594d0",
+      "data_cid": "8738627241977943248",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x8620a7d39be7b091%3A0x7945d72d66a594d0&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x8620a7d39be7b091%3A0x7945d72d66a594d0&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 29.967223699999998,
+        "longitude": -90.034617
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x8620a7d39be7b091%3A0x7945d72d66a594d0%218m2%213d29.967223699999998%214d-90.034617&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 1,
+      "reviews": 1,
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "1235 Bartholomew St, New Orleans, LA 70117",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–5PM",
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM"
+      },
+      "phone": "(504) 446-2383",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KwqXXf_AOKSyiyJ92Z_mCA&cb_client=search.gws-prod.gps&w=80&h=92&yaw=104.241936&pitch=0&thumbfov=100"
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&ll=%4029.951065%2C-90.071533%2C14z&q=job+placement+services&start=20&type=search"
+  }
+}

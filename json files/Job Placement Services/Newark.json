@@ -1,0 +1,662 @@
+{
+  "search_metadata": {
+    "id": "63901571aa6c95e92710315c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/05c8580c60739620/63901571aa6c95e92710315c.json",
+    "created_at": "2022-12-07 04:24:17 UTC",
+    "processed_at": "2022-12-07 04:24:17 UTC",
+    "google_maps_url": "https://www.google.com/maps/search/@40.731510,-74.174393,14z/job+placement+services?hl=en",
+    "raw_html_file": "https://serpapi.com/searches/c046cbd5e35e3694/63901571aa6c95e92710315c.html",
+    "total_time_taken": 1.87
+  },
+  "search_parameters": {
+    "engine": "google_maps",
+    "type": "search",
+    "q": "job placement services",
+    "ll": "@40.731510,-74.174393,14z",
+    "google_domain": "google.com",
+    "hl": "en"
+  },
+  "search_information": {
+    "local_results_state": "Results for exact spelling",
+    "query_displayed": "job placement services"
+  },
+  "local_results": [
+    {
+      "position": 1,
+      "title": "Aerotek",
+      "place_id": "ChIJk7jiYO5XwokRBkoHhYxjGnY",
+      "data_id": "0x89c257ee60e2b893:0x761a638c85074a06",
+      "data_cid": "8510223901048392198",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c257ee60e2b893%3A0x761a638c85074a06&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c257ee60e2b893%3A0x761a638c85074a06&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.8177874,
+        "longitude": -74.1011748
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c257ee60e2b893%3A0x761a638c85074a06%218m2%213d40.8177874%214d-74.1011748&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.6,
+      "reviews": 87,
+      "type": "Employment agency",
+      "address": "301 Route 17 North, Suite 901, Rutherford, NJ 07070",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(201) 272-1700",
+      "website": "https://www.aerotek.com/en/locations/united-states/new-jersey/rutherford?ecid=ls_aero_bizlist_091222_seo7123173",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipO3gXvCne92XHt_y_AsMzlNmty0KSDOQxQ5r4ED=w92-h92-k-no"
+    },
+    {
+      "position": 2,
+      "title": "Workonomics Staffing Resource",
+      "place_id": "ChIJxS_iGoJTwokReovjLK3Hfcw",
+      "data_id": "0x89c253821ae22fc5:0xcc7dc7ad2ce38b7a",
+      "data_cid": "14735153102422510458",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c253821ae22fc5%3A0xcc7dc7ad2ce38b7a&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c253821ae22fc5%3A0xcc7dc7ad2ce38b7a&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7364339,
+        "longitude": -74.1700987
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c253821ae22fc5%3A0xcc7dc7ad2ce38b7a%218m2%213d40.7364339%214d-74.1700987&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 2.8,
+      "reviews": 25,
+      "type": "Employment agency",
+      "address": "24 Commerce St Suite 1001, Newark, NJ 07102",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–5PM",
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM"
+      },
+      "phone": "(973) 824-0417",
+      "website": "http://workonomics-staff.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPLaohvakTdhOVxwwBDRKXTEne3zuAqkcDNJVMW=w92-h92-k-no"
+    },
+    {
+      "position": 3,
+      "title": "Aerotek",
+      "place_id": "ChIJTfdYTv1YwokRVALYGrgbT5g",
+      "data_id": "0x89c258fd4e58f74d:0x984f1bb81ad80254",
+      "data_cid": "10975021294463484500",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c258fd4e58f74d%3A0x984f1bb81ad80254&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c258fd4e58f74d%3A0x984f1bb81ad80254&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.753948099999995,
+        "longitude": -73.9716808
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c258fd4e58f74d%3A0x984f1bb81ad80254%218m2%213d40.753948099999995%214d-73.9716808&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.4,
+      "reviews": 157,
+      "type": "Employment agency",
+      "address": "757 3rd Ave Suite 801, New York, NY 10017",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(212) 588-5826",
+      "website": "https://www.aerotek.com/en/locations/united-states/new-york/new-york?ecid=ls_aero_bizlist_091222_seo7123137",
+      "user_review": "\"I had a wonderful experience working with Aerotek for job placement.\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipM1PdsblJLeLwFbKYr73q5Brrj1T6KJtHLrvcfR=w163-h92-k-no"
+    },
+    {
+      "position": 4,
+      "title": "KAS Placement",
+      "place_id": "ChIJJ639qbtYwokRoWSuRKJHePI",
+      "data_id": "0x89c258bba9fdad27:0xf27847a244ae64a1",
+      "data_cid": "17471793516646392993",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c258bba9fdad27%3A0xf27847a244ae64a1&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c258bba9fdad27%3A0xf27847a244ae64a1&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.751448599999996,
+        "longitude": -73.9891093
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c258bba9fdad27%3A0xf27847a244ae64a1%218m2%213d40.751448599999996%214d-73.9891093&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.8,
+      "reviews": 30,
+      "type": "Employment agency",
+      "address": "147 W 35th St, New York, NY 10001",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–6PM",
+        "wednesday": "8:30AM–6PM",
+        "thursday": "8:30AM–6PM",
+        "friday": "8:30AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–6PM"
+      },
+      "phone": "(212) 348-7670",
+      "website": "http://www.kasplacement.com/",
+      "user_review": "\"KAS Placement has been great to work with.\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipO_NSghMAJdDqPg6vGPsuK-uhnHgyZGeU9rOIwr=w138-h92-k-no"
+    },
+    {
+      "position": 5,
+      "title": "Brickforce Staffing - Newark",
+      "place_id": "ChIJ_dIDbJBTwokRj0fW-q_MC6o",
+      "data_id": "0x89c253906c03d2fd:0xaa0bccaffad6478f",
+      "data_cid": "12253112267391256463",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c253906c03d2fd%3A0xaa0bccaffad6478f&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c253906c03d2fd%3A0xaa0bccaffad6478f&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7285238,
+        "longitude": -74.1535069
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c253906c03d2fd%3A0xaa0bccaffad6478f%218m2%213d40.7285238%214d-74.1535069&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.3,
+      "reviews": 16,
+      "type": "Temp agency",
+      "address": "248 Ferry St, Newark, NJ 07105",
+      "open_state": "Closed ⋅ Opens 5:30AM Wed",
+      "hours": "Closed ⋅ Opens 5:30AM Wed",
+      "operating_hours": {
+        "tuesday": "5:30AM–2:30PM",
+        "wednesday": "5:30AM–2:30PM",
+        "thursday": "5:30AM–2:30PM",
+        "friday": "5:30AM–2:30PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "5:30AM–2:30PM"
+      },
+      "phone": "(973) 491-6441",
+      "website": "http://www.brickforce.com/",
+      "user_review": "\"U want a job asap this is the ...\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOrUr13LIxcSKSoIG1nXnR5LzpMtGvrQ-3WmNBX=w80-h107-k-no"
+    },
+    {
+      "position": 6,
+      "title": "Robert Half Recruiters & Employment Agency",
+      "place_id": "ChIJ2_1fiRNawokR32xrwQswZsM",
+      "data_id": "0x89c25a13895ffddb:0xc366300bc16b6cdf",
+      "data_cid": "14079994112068250847",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c25a13895ffddb%3A0xc366300bc16b6cdf&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c25a13895ffddb%3A0xc366300bc16b6cdf&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.709619499999995,
+        "longitude": -74.01050839999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c25a13895ffddb%3A0xc366300bc16b6cdf%218m2%213d40.709619499999995%214d-74.01050839999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.7,
+      "reviews": 25,
+      "type": "Employment agency",
+      "address": "165 Broadway Suite 2710, New York, NY 10006",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–6PM",
+        "wednesday": "8AM–6PM",
+        "thursday": "8AM–6PM",
+        "friday": "8AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–6PM"
+      },
+      "phone": "(844) 230-7651",
+      "website": "https://www.roberthalf.com/locations/ny-new-york/165-broadway?utm_source=gmb_listing&utm_medium=organic&utm_campaign=local_listing&y_source=1_MTI5MDM1NjktNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMHL3YYNPyDwvUabNCrljxZBsuxTmdkxy2gGdS-=w163-h92-k-no"
+    },
+    {
+      "position": 7,
+      "title": "Betts Recruiting",
+      "place_id": "ChIJZUqaiKJZwokRNkBwuzvaLhk",
+      "data_id": "0x89c259a2889a4a65:0x192eda3bbb704036",
+      "data_cid": "1814627649959510070",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c259a2889a4a65%3A0x192eda3bbb704036&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c259a2889a4a65%3A0x192eda3bbb704036&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7239344,
+        "longitude": -73.99648359999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c259a2889a4a65%3A0x192eda3bbb704036%218m2%213d40.7239344%214d-73.99648359999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.8,
+      "reviews": 63,
+      "type": "Employment agency",
+      "address": "270 Lafayette St #208, New York, NY 10012",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–5PM",
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM"
+      },
+      "phone": "(917) 565-8147",
+      "website": "https://bettsrecruiting.com/new-york-ny/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNpalC3E4N_bTpDO_rdga0FaZ8d4ihHjiuKVo42=w163-h92-k-no"
+    },
+    {
+      "position": 8,
+      "title": "Prospect Employment Services",
+      "place_id": "ChIJXxn0hUyrw4kRA4QFrgXyPQA",
+      "data_id": "0x89c3ab4c85f4195f:0x3df205ae058403",
+      "data_cid": "17436079787705347",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c3ab4c85f4195f%3A0x3df205ae058403&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c3ab4c85f4195f%3A0x3df205ae058403&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.763363999999996,
+        "longitude": -74.2206738
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c3ab4c85f4195f%3A0x3df205ae058403%218m2%213d40.763363999999996%214d-74.2206738&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.7,
+      "reviews": 3,
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "60 Evergreen Pl # 401, East Orange, NJ 07018",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–5PM",
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM"
+      },
+      "phone": "(973) 395-0520",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8V9xPD1aQ4QWRAb9Jf_AQQ&cb_client=search.gws-prod.gps&w=80&h=92&yaw=137.05246&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 9,
+      "title": "Taylor Hodson Inc.",
+      "place_id": "ChIJg54IvLxZwokRVjsIxsP5RuY",
+      "data_id": "0x89c259bcbc089e83:0xe646f9c3c6083b56",
+      "data_cid": "16593224496329538390",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c259bcbc089e83%3A0xe646f9c3c6083b56&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c259bcbc089e83%3A0xe646f9c3c6083b56&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7412376,
+        "longitude": -73.9958496
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c259bcbc089e83%3A0xe646f9c3c6083b56%218m2%213d40.7412376%214d-73.9958496&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.1,
+      "reviews": 38,
+      "type": "Employment agency",
+      "address": "130 W 25th St # 7b, New York, NY 10001",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5:30PM",
+        "wednesday": "8AM–5:30PM",
+        "thursday": "8AM–5:30PM",
+        "friday": "8AM–5:30PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5:30PM"
+      },
+      "phone": "(212) 924-8300",
+      "website": "http://www.taylorhodson.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPgR2Mb6mnGSP25498ZifcfdK5npyDJNrNc4Y50=w92-h92-k-no"
+    },
+    {
+      "position": 10,
+      "title": "Larkin Agency",
+      "place_id": "ChIJjzEKHgBZwokRm-2CmGhOIuc",
+      "data_id": "0x89c259001e0a318f:0xe7224e689882ed9b",
+      "data_cid": "16654960583111798171",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c259001e0a318f%3A0xe7224e689882ed9b&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c259001e0a318f%3A0xe7224e689882ed9b&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.754911,
+        "longitude": -73.98169349999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c259001e0a318f%3A0xe7224e689882ed9b%218m2%213d40.754911%214d-73.98169349999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.4,
+      "reviews": 86,
+      "type": "Temp agency",
+      "address": "25 W 43rd St #806, New York, NY 10036",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–5PM",
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM"
+      },
+      "phone": "(212) 695-2668",
+      "website": "https://www.larkinagencystaffing.com/",
+      "user_review": "\"I'm forever grateful for the jobs they've given me!!\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPfWiLLv9mWSYiyZ9Of7teFSThUsWBNbSpJ33X2=w114-h92-k-no"
+    },
+    {
+      "position": 11,
+      "title": "On Target Staffing LLC",
+      "place_id": "ChIJGUty7YtUwokRMlZ0_fUU5ww",
+      "data_id": "0x89c2548bed724b19:0xce714f5fd745632",
+      "data_cid": "929734894827099698",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c2548bed724b19%3A0xce714f5fd745632&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c2548bed724b19%3A0xce714f5fd745632&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7587137,
+        "longitude": -74.17570979999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c2548bed724b19%3A0xce714f5fd745632%218m2%213d40.7587137%214d-74.17570979999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 2.1,
+      "reviews": 53,
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "261 Clifton Ave, Newark, NJ 07104",
+      "open_state": "Closed ⋅ Opens 5AM Wed",
+      "hours": "Closed ⋅ Opens 5AM Wed",
+      "operating_hours": {
+        "tuesday": "5AM–6:30PM",
+        "wednesday": "5AM–6:30PM",
+        "thursday": "5AM–6:30PM",
+        "friday": "5AM–6:30PM",
+        "saturday": "5AM–6:30PM",
+        "sunday": "Closed",
+        "monday": "5AM–6:30PM"
+      },
+      "phone": "(973) 481-0009",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ugWFJzTsRJnYJc5du6toug&cb_client=search.gws-prod.gps&w=80&h=92&yaw=173.21461&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 12,
+      "title": "Quintrix Solutions, Inc",
+      "place_id": "ChIJfWjOH_2tw4kRxl0QrwuT-H4",
+      "data_id": "0x89c3adfd1fce687d:0x7ef8930baf105dc6",
+      "data_cid": "9149224321394171334",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c3adfd1fce687d%3A0x7ef8930baf105dc6&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c3adfd1fce687d%3A0x7ef8930baf105dc6&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.6814579,
+        "longitude": -74.2325132
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c3adfd1fce687d%3A0x7ef8930baf105dc6%218m2%213d40.6814579%214d-74.2325132&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4,
+      "reviews": 21,
+      "type": "Employment agency",
+      "address": "1095 Morris Ave Suite 101, Union, NJ 07083",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–6PM",
+        "wednesday": "9AM–6PM",
+        "thursday": "9AM–6PM",
+        "friday": "9AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–6PM"
+      },
+      "phone": "(646) 762-0305",
+      "website": "https://www.quintrixsolutions.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPAr7Ze7WJOBNnHc_ltTDH1t0IQg4_DIufYQWjw=w166-h92-k-no"
+    },
+    {
+      "position": 13,
+      "title": "Clarity",
+      "place_id": "ChIJ98DcDapZwokRb_5wiaL7XDM",
+      "data_id": "0x89c259aa0ddcc0f7:0x335cfba28970fe6f",
+      "data_cid": "3701109669300862575",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c259aa0ddcc0f7%3A0x335cfba28970fe6f&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c259aa0ddcc0f7%3A0x335cfba28970fe6f&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7511723,
+        "longitude": -73.99158919999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c259aa0ddcc0f7%3A0x335cfba28970fe6f%218m2%213d40.7511723%214d-73.99158919999999&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.8,
+      "reviews": 103,
+      "type": "Employment agency",
+      "address": "250 W 34th St. 3rd Fl, New York, NY 10119",
+      "phone": "(212) 404-8000",
+      "website": "http://www.clarityrecruiting.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipM8zC4EaFBbKe63VCf_X_I1g2E0C7c4U8VSh8Iv=w122-h92-k-no"
+    },
+    {
+      "position": 14,
+      "title": "D&A staffing solutions",
+      "place_id": "ChIJE6BFgSuzw4kRESo9XfQz9RI",
+      "data_id": "0x89c3b32b8145a013:0x12f533f45d3d2a11",
+      "data_cid": "1366055186606139921",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c3b32b8145a013%3A0x12f533f45d3d2a11&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c3b32b8145a013%3A0x12f533f45d3d2a11&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.666389099999996,
+        "longitude": -74.2310239
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c3b32b8145a013%3A0x12f533f45d3d2a11%218m2%213d40.666389099999996%214d-74.2310239&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.4,
+      "reviews": 7,
+      "type": "Employment agency",
+      "address": "425 Westfield Ave, Elizabeth, NJ 07208",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–6PM",
+        "wednesday": "8AM–6PM",
+        "thursday": "8AM–6PM",
+        "friday": "8AM–6PM",
+        "saturday": "8AM–2:30PM",
+        "sunday": "Closed",
+        "monday": "8AM–6PM"
+      },
+      "phone": "(908) 401-0142",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMDwtdvrvH-IwqMHtmh5ByGVzC6gYGZOLzgGgpF=w80-h106-k-no"
+    },
+    {
+      "position": 15,
+      "title": "KAS Placement Sales and Marketing Recruiters",
+      "place_id": "ChIJJ639qbtYwokRbmeKbkcQC3w",
+      "data_id": "0x89c258bba9fdad27:0x7c0b10476e8a676e",
+      "data_cid": "8938255784430167918",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c258bba9fdad27%3A0x7c0b10476e8a676e&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c258bba9fdad27%3A0x7c0b10476e8a676e&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.755647599999996,
+        "longitude": -73.9713866
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c258bba9fdad27%3A0x7c0b10476e8a676e%218m2%213d40.755647599999996%214d-73.9713866&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.9,
+      "reviews": 74,
+      "type": "Employment agency",
+      "address": "800 3rd Ave 28th floor, New York, NY 10022",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–7PM",
+        "wednesday": "8AM–7PM",
+        "thursday": "8AM–7PM",
+        "friday": "8AM–5:30PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–7PM"
+      },
+      "phone": "(212) 348-7670",
+      "website": "http://www.kasplacement.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMRpTPDL33n464LxgReddkDjeMXRnRxODtUhqNg=w122-h92-k-no"
+    },
+    {
+      "position": 16,
+      "title": "Motion Recruitment",
+      "place_id": "ChIJO4kMMP5YwokRi-vBHWXtE3M",
+      "data_id": "0x89c258fe300c893b:0x7313ed651dc1eb8b",
+      "data_cid": "8292232357465942923",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c258fe300c893b%3A0x7313ed651dc1eb8b&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c258fe300c893b%3A0x7313ed651dc1eb8b&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7555104,
+        "longitude": -73.9802022
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c258fe300c893b%3A0x7313ed651dc1eb8b%218m2%213d40.7555104%214d-73.9802022&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.9,
+      "reviews": 84,
+      "type": "Employment agency",
+      "address": "2 W 45th St 17th floor, New York, NY 10017",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–5:30PM",
+        "wednesday": "8:30AM–5:30PM",
+        "thursday": "8:30AM–5:30PM",
+        "friday": "8:30AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–5:30PM"
+      },
+      "phone": "(212) 697-5800",
+      "website": "https://motionrecruitment.com/about/locations/new-york-it-staffing-recruiting?utm_source=google-business&utm_medium=organic&utm_campaign=new-york",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPS7r9o-nem12bfQpM6GjEwMoUzs40KJsG3yY1t=w138-h92-k-no"
+    },
+    {
+      "position": 17,
+      "title": "StaffPro Agency",
+      "place_id": "ChIJZZlogPNNwokRp7ZqlgjLltE",
+      "data_id": "0x89c24df380689965:0xd196cb08966ab6a7",
+      "data_cid": "15102481638177289895",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c24df380689965%3A0xd196cb08966ab6a7&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c24df380689965%3A0xd196cb08966ab6a7&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.675813999999995,
+        "longitude": -74.2911548
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c24df380689965%3A0xd196cb08966ab6a7%218m2%213d40.675813999999995%214d-74.2911548&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.9,
+      "reviews": 15,
+      "type": "Employment agency",
+      "address": "525 Boulevard Suite #2, Kenilworth, NJ 07033",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–5PM",
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–4PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM"
+      },
+      "phone": "(908) 603-4900",
+      "website": "http://www.staffproagency.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNYMYpmUf7uPSoiHm5aiOQ4wlGqPL8F3sZZwN1v=w202-h92-k-no"
+    },
+    {
+      "position": 18,
+      "title": "Beacon Hill Staffing Group",
+      "place_id": "ChIJG0LWCQJZwokRfGfdhQLSzjw",
+      "data_id": "0x89c2590209d6421b:0x3cced20285dd677c",
+      "data_cid": "4381670395755718524",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c2590209d6421b%3A0x3cced20285dd677c&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c2590209d6421b%3A0x3cced20285dd677c&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7535269,
+        "longitude": -73.9857827
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c2590209d6421b%3A0x3cced20285dd677c%218m2%213d40.7535269%214d-73.9857827&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.2,
+      "reviews": 80,
+      "type": "Employment agency",
+      "address": "104 W 40th St, New York, NY 10018",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–6PM",
+        "wednesday": "8AM–6PM",
+        "thursday": "8AM–6PM",
+        "friday": "8AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–6PM"
+      },
+      "phone": "(212) 986-3000",
+      "website": "http://www.beaconhillstaffing.com/",
+      "user_review": "\"They truly get the job done.\"",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=81ocpfMZ8lgDPAQRSJ5r_A&cb_client=search.gws-prod.gps&w=80&h=92&yaw=44.94507&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 19,
+      "title": "Integrity Staffing Solutions",
+      "place_id": "ChIJKXQzlzhZwokRtIUsB679kCU",
+      "data_id": "0x89c2593897337429:0x2590fdae072c85b4",
+      "data_cid": "2706942299936163252",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c2593897337429%3A0x2590fdae072c85b4&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c2593897337429%3A0x2590fdae072c85b4&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7864472,
+        "longitude": -74.0442643
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c2593897337429%3A0x2590fdae072c85b4%218m2%213d40.7864472%214d-74.0442643&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.6,
+      "reviews": 53,
+      "type": "Employment agency",
+      "address": "700 Plaza Dr Suite 209, Secaucus, NJ 07094",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–5PM",
+        "wednesday": "8AM–5PM",
+        "thursday": "8AM–5PM",
+        "friday": "8AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–5PM"
+      },
+      "phone": "(551) 300-6440",
+      "website": "https://www.integritystaffing.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMuz2ll5DfDckWvZrUPQ_ZqkzYuEV6uXIHTRejJ=w122-h92-k-no"
+    },
+    {
+      "position": 20,
+      "title": "Core Staffing Services Inc",
+      "place_id": "ChIJfWbAmQFZwokRMBZIWciY3xo",
+      "data_id": "0x89c2590199c0667d:0x1adf98c859481630",
+      "data_cid": "1936434351051380272",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c2590199c0667d%3A0x1adf98c859481630&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c2590199c0667d%3A0x1adf98c859481630&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7517621,
+        "longitude": -73.9898149
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x89c2590199c0667d%3A0x1adf98c859481630%218m2%213d40.7517621%214d-73.9898149&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.7,
+      "reviews": 23,
+      "type": "Employment agency",
+      "address": "463 7th Ave #1800, New York, NY 10018",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–5:30PM",
+        "wednesday": "8:30AM–5:30PM",
+        "thursday": "8:30AM–5:30PM",
+        "friday": "8:30AM–5:30PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–5:30PM"
+      },
+      "phone": "(212) 766-1222",
+      "website": "http://www.employcore.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOQLtj9k1zvJgl1Kh7fknTF6KiQYIHqDcZH5EQ3=w138-h92-k-no"
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&ll=%4040.731510%2C-74.174393%2C14z&q=job+placement+services&start=20&type=search"
+  }
+}

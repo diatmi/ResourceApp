@@ -1,0 +1,637 @@
+{
+  "search_metadata": {
+    "id": "638fbf73d5b1c58fcef0ca34",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0e0d25ea400272d4/638fbf73d5b1c58fcef0ca34.json",
+    "created_at": "2022-12-06 22:17:23 UTC",
+    "processed_at": "2022-12-06 22:17:23 UTC",
+    "google_maps_url": "https://www.google.com/maps/search/@34.0522,118.2437,3z/job+placement+services?hl=en",
+    "raw_html_file": "https://serpapi.com/searches/7dc17d27dfd0ea8b/638fbf73d5b1c58fcef0ca34.html",
+    "total_time_taken": 4.87
+  },
+  "search_parameters": {
+    "engine": "google_maps",
+    "type": "search",
+    "q": "job placement services",
+    "ll": "@34.0522,118.2437,3z",
+    "google_domain": "google.com",
+    "hl": "en"
+  },
+  "search_information": {
+    "local_results_state": "Results for exact spelling",
+    "query_displayed": "job placement services"
+  },
+  "local_results": [
+    {
+      "position": 1,
+      "title": "njoy Jobs Recruitment",
+      "place_id": "ChIJUV0NWjj_sUARS9nV6ckd5qQ",
+      "data_id": "0x40b1ff385a0d5d51:0xa4e61dc9e9d5d94b",
+      "data_cid": "11882217419912370507",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b1ff385a0d5d51%3A0xa4e61dc9e9d5d94b&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b1ff385a0d5d51%3A0xa4e61dc9e9d5d94b&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 44.4411479,
+        "longitude": 26.1009258
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b1ff385a0d5d51%3A0xa4e61dc9e9d5d94b%218m2%213d44.4411479%214d26.1009258&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.4,
+      "reviews": 10,
+      "type": "Recruiter",
+      "address": "Piața C. A. Rosetti nr 17, București 020011",
+      "phone": "0760 847 527",
+      "website": "http://www.njoyjobs.ro/contact/",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZbETF9NlRQx-HB36CCARig&cb_client=search.gws-prod.gps&w=80&h=92&yaw=111.74981&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 2,
+      "title": "OIL & GAS RECRUITMENT",
+      "place_id": "ChIJmwdmFq_6ukARpA3VTXSKq6U",
+      "data_id": "0x40bafaaf1666079b:0xa5ab8a744dd50da4",
+      "data_cid": "11937787469402279332",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40bafaaf1666079b%3A0xa5ab8a744dd50da4&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40bafaaf1666079b%3A0xa5ab8a744dd50da4&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 44.197334399999995,
+        "longitude": 28.637287299999997
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40bafaaf1666079b%3A0xa5ab8a744dd50da4%218m2%213d44.197334399999995%214d28.637287299999997&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.8,
+      "reviews": 6,
+      "type": "Employment agency",
+      "address": "Strada Primăverii 43, Constanța 900635",
+      "open_state": "Closed ⋅ Opens 10AM",
+      "hours": "Closed ⋅ Opens 10AM",
+      "operating_hours": {
+        "wednesday": "10AM–6PM",
+        "thursday": "10AM–6PM",
+        "friday": "10AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "10AM–6PM",
+        "tuesday": "10AM–6PM"
+      },
+      "phone": "0241 584 483",
+      "website": "https://oilgasrecruitment.business.site/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNu_ILwkHkNvUz0KgB24b8JXLqObUniCWkr6iJc=w122-h92-k-no"
+    },
+    {
+      "position": 3,
+      "title": "Euro Staff Solution",
+      "place_id": "ChIJt1q9xIlcs0ARvXlF63eHokU",
+      "data_id": "0x40b35c89c4bd5ab7:0x45a28777eb4579bd",
+      "data_cid": "5017721883962210749",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b35c89c4bd5ab7%3A0x45a28777eb4579bd&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b35c89c4bd5ab7%3A0x45a28777eb4579bd&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 45.6419411,
+        "longitude": 25.6230685
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b35c89c4bd5ab7%3A0x45a28777eb4579bd%218m2%213d45.6419411%214d25.6230685&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 1,
+      "reviews": 1,
+      "unclaimed_listing": true,
+      "type": "Employment agency",
+      "address": "Strada Vulturului 4b, Brașov",
+      "phone": "0376 444 675",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=RTEg9bVSwJnZKhbrfY0cKg&cb_client=search.gws-prod.gps&w=80&h=92&yaw=287.32092&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 4,
+      "title": "Vale's Staff HR Services - Workforce recruitment",
+      "place_id": "ChIJna57a3RgsUARplLZGPSQv_U",
+      "data_id": "0x40b160746b7bae9d:0xf5bf90f418d952a6",
+      "data_cid": "17708031637907395238",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b160746b7bae9d%3A0xf5bf90f418d952a6&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b160746b7bae9d%3A0xf5bf90f418d952a6&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 45.143786999999996,
+        "longitude": 26.813167
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b160746b7bae9d%3A0xf5bf90f418d952a6%218m2%213d45.143786999999996%214d26.813167&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.4,
+      "reviews": 14,
+      "type": "Recruiter",
+      "address": "Strada Independenței nr. 28 C, Buzău 120404",
+      "open_state": "Closed ⋅ Opens 9AM",
+      "hours": "Closed ⋅ Opens 9AM",
+      "operating_hours": {
+        "wednesday": "9AM–6PM",
+        "thursday": "9AM–6PM",
+        "friday": "9AM–8PM",
+        "saturday": "10:30AM–3:30PM",
+        "sunday": "Closed",
+        "monday": "9AM–6PM",
+        "tuesday": "9AM–6PM"
+      },
+      "phone": "0766 695 685",
+      "website": "http://www.valestaff.eu/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMTXikLoeIVbZNRcXoHJ_4NuikzQ7ClnilqhbnU=w80-h106-k-no"
+    },
+    {
+      "position": 5,
+      "title": "Everest Recruitment Services S.R.L.",
+      "place_id": "ChIJ329p-0j_sUARlhZ9CMkwDWM",
+      "data_id": "0x40b1ff48fb696fdf:0x630d30c9087d1696",
+      "data_cid": "7137414624441079446",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b1ff48fb696fdf%3A0x630d30c9087d1696&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b1ff48fb696fdf%3A0x630d30c9087d1696&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 44.424741399999995,
+        "longitude": 26.0954604
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b1ff48fb696fdf%3A0x630d30c9087d1696%218m2%213d44.424741399999995%214d26.0954604&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.8,
+      "reviews": 6,
+      "type": "Recruiter",
+      "address": "Strada 11 Iunie 7, București 030167",
+      "open_state": "Closed ⋅ Opens 9AM",
+      "hours": "Closed ⋅ Opens 9AM",
+      "operating_hours": {
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5AM",
+        "tuesday": "9AM–5PM"
+      },
+      "phone": "0732 535 535",
+      "website": "http://www.everestrecruitment.ro/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPXG0duPpznqZ7zhBDAjYs_ZMTcpfVA0GAMBYbh=w324-h92-k-no"
+    },
+    {
+      "position": 6,
+      "title": "JobsGlobal.com Employment Services SRL",
+      "place_id": "ChIJScYNgvUCskARadKLxv6HjZs",
+      "data_id": "0x40b202f5820dc649:0x9b8d87fec68bd269",
+      "data_cid": "11208764575917527657",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b202f5820dc649%3A0x9b8d87fec68bd269&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b202f5820dc649%3A0x9b8d87fec68bd269&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 44.450095999999995,
+        "longitude": 26.083275999999998
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b202f5820dc649%3A0x9b8d87fec68bd269%218m2%213d44.450095999999995%214d26.083275999999998&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 5,
+      "reviews": 2,
+      "type": "Recruiter",
+      "address": "Strada Buzești 71, București",
+      "open_state": "Closed ⋅ Opens 9AM",
+      "hours": "Closed ⋅ Opens 9AM",
+      "operating_hours": {
+        "wednesday": "9AM–6PM",
+        "thursday": "9AM–6PM",
+        "friday": "9AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–6PM",
+        "tuesday": "9AM–6PM"
+      },
+      "phone": "031 405 2982",
+      "website": "http://www.jobsglobal.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPdrq5WK9JtbCgVY9_S1KxEVyhMFbX3Y1Fs3dl4=w163-h92-k-no"
+    },
+    {
+      "position": 7,
+      "title": "YRJ EURO INTERNATIONAL",
+      "place_id": "ChIJQZHyWEMDskAR5ehBdS07K3w",
+      "data_id": "0x40b2034358f29141:0x7c2b3b2d7541e8e5",
+      "data_cid": "8947310151128443109",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b2034358f29141%3A0x7c2b3b2d7541e8e5&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b2034358f29141%3A0x7c2b3b2d7541e8e5&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 44.4699503,
+        "longitude": 26.0505352
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b2034358f29141%3A0x7c2b3b2d7541e8e5%218m2%213d44.4699503%214d26.0505352&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "type": "Employment agency",
+      "address": "Calea Griviței 395, București 012244",
+      "open_state": "Closed ⋅ Opens 9AM",
+      "hours": "Closed ⋅ Opens 9AM",
+      "operating_hours": {
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM",
+        "tuesday": "9AM–5PM"
+      },
+      "phone": "0771 693 524",
+      "website": "http://www.yrjeuro.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipPBfLPYEfAwAeamBkKLEaMOgNmYEZu5upQyX4BM=w163-h92-k-no"
+    },
+    {
+      "position": 8,
+      "title": "SpeedJob Agency",
+      "place_id": "ChIJ7cH8w3Bbs0ARpC1Y3zPFW0k",
+      "data_id": "0x40b35b70c3fcc1ed:0x495bc533df582da4",
+      "data_cid": "5286035414230511012",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b35b70c3fcc1ed%3A0x495bc533df582da4&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b35b70c3fcc1ed%3A0x495bc533df582da4&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 45.6490441,
+        "longitude": 25.605392
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b35b70c3fcc1ed%3A0x495bc533df582da4%218m2%213d45.6490441%214d25.605392&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 1,
+      "reviews": 1,
+      "type": "Human resource consulting",
+      "address": "Bulevardul 15 Noiembrie 41, Brașov 500096",
+      "open_state": "Closed ⋅ Opens 9AM",
+      "hours": "Closed ⋅ Opens 9AM",
+      "operating_hours": {
+        "wednesday": "9AM–5:30PM",
+        "thursday": "9AM–5:30PM",
+        "friday": "9AM–5:30PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5:30PM",
+        "tuesday": "9AM–5:30PM"
+      },
+      "phone": "0741 926 822",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMWBJhEAlHNvdr4bGro9PYXFsDNRKOIbwMG_wX7=w92-h92-k-no"
+    },
+    {
+      "position": 9,
+      "title": "ITM Timiş",
+      "place_id": "ChIJp2zbPHBdRUcRgwvrmlHxGdI",
+      "data_id": "0x47455d703cdb6ca7:0xd219f1519aeb0b83",
+      "data_cid": "15139396955176373123",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x47455d703cdb6ca7%3A0xd219f1519aeb0b83&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x47455d703cdb6ca7%3A0xd219f1519aeb0b83&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 45.716073699999995,
+        "longitude": 21.236470699999998
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x47455d703cdb6ca7%3A0xd219f1519aeb0b83%218m2%213d45.716073699999995%214d21.236470699999998&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.8,
+      "reviews": 128,
+      "type": "Employment agency",
+      "address": "Calea Timișoarei 72, Giroc 300167",
+      "open_state": "Closed ⋅ Opens 8:30AM",
+      "hours": "Closed ⋅ Opens 8:30AM",
+      "operating_hours": {
+        "wednesday": "8:30AM–2PM",
+        "thursday": "8:30AM–2PM",
+        "friday": "8:30AM–1PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–2PM",
+        "tuesday": "8:30AM–2PM"
+      },
+      "phone": "0256 407 959",
+      "website": "https://www.inspectiamuncii.ro/web/itm-timis/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNfAoE6_1SGCCrPr6zKtZlzCubJ7_CMmknnQg1U=w148-h92-k-no"
+    },
+    {
+      "position": 10,
+      "title": "Mega Employment Placement Agency",
+      "place_id": "ChIJEQm_X_39sUARHzJCfWV676U",
+      "data_id": "0x40b1fdfd5fbf0911:0xa5ef7a657d42321f",
+      "data_cid": "11956910112003731999",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b1fdfd5fbf0911%3A0xa5ef7a657d42321f&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b1fdfd5fbf0911%3A0xa5ef7a657d42321f&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 44.4087769,
+        "longitude": 26.1770258
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b1fdfd5fbf0911%3A0xa5ef7a657d42321f%218m2%213d44.4087769%214d26.1770258&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "type": "Recruiter",
+      "address": "Strada Mizil 2c, București 032345",
+      "open_state": "Closed ⋅ Opens 7AM",
+      "hours": "Closed ⋅ Opens 7AM",
+      "operating_hours": {
+        "wednesday": "7AM–7PM",
+        "thursday": "7AM–7PM",
+        "friday": "9AM–7PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–7PM",
+        "tuesday": "9AM–7PM"
+      },
+      "phone": "0756 690 714",
+      "website": "https://mepa.ro/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipN8Ifp-wZo0kSctIkL_FQMkvhv-l3Ms_6NBkhK_=w80-h142-k-no"
+    },
+    {
+      "position": 11,
+      "title": "AG Recruitment and Management",
+      "place_id": "ChIJAQAJOycMSUcRvnyaZf5tXtI",
+      "data_id": "0x47490c273b090001:0xd25e6dfe659a7cbe",
+      "data_cid": "15158674335169412286",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x47490c273b090001%3A0xd25e6dfe659a7cbe&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x47490c273b090001%3A0xd25e6dfe659a7cbe&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 46.7714898,
+        "longitude": 23.5950129
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x47490c273b090001%3A0xd25e6dfe659a7cbe%218m2%213d46.7714898%214d23.5950129&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 1,
+      "reviews": 2,
+      "unclaimed_listing": true,
+      "type": "Recruiter",
+      "address": "Strada Iuliu Maniu Nr 39, Cluj-Napoca 400095",
+      "open_state": "Closed ⋅ Opens 9AM",
+      "hours": "Closed ⋅ Opens 9AM",
+      "operating_hours": {
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM",
+        "tuesday": "9AM–5PM"
+      },
+      "phone": "0364 780 290",
+      "website": "https://www.facebook.com/agrecruitment.eu/",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=2Thk-n69G0pCNKGgmDSgqw&cb_client=search.gws-prod.gps&w=80&h=92&yaw=312.56604&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 12,
+      "title": "Antal International",
+      "place_id": "ChIJxyDyBHH_sUAR1sDq-09ytZ4",
+      "data_id": "0x40b1ff7104f220c7:0x9eb5724ffbeac0d6",
+      "data_cid": "11436172516631691478",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b1ff7104f220c7%3A0x9eb5724ffbeac0d6&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b1ff7104f220c7%3A0x9eb5724ffbeac0d6&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 44.491559099999996,
+        "longitude": 26.1246661
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b1ff7104f220c7%3A0x9eb5724ffbeac0d6%218m2%213d44.491559099999996%214d26.1246661&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 3.7,
+      "reviews": 6,
+      "type": "Recruiter",
+      "address": "North Lane Residence, 15 23, Șoseaua Gheorghe Ionescu Sisești 225C, București 077190",
+      "open_state": "Closed ⋅ Opens 9AM",
+      "hours": "Closed ⋅ Opens 9AM",
+      "operating_hours": {
+        "wednesday": "9AM–6PM",
+        "thursday": "9AM–6PM",
+        "friday": "9AM–6PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–6PM",
+        "tuesday": "9AM–6PM"
+      },
+      "phone": "031 437 0975",
+      "website": "http://www.antal.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNHEoChTMTmMNVVZjQrsHbcsylyoZkLUlEehLGo=w160-h92-k-no"
+    },
+    {
+      "position": 13,
+      "title": "Adecco Romania",
+      "place_id": "ChIJL_UgOWf_sUAREQHuGZq-t14",
+      "data_id": "0x40b1ff673920f52f:0x5eb7be9a19ee0111",
+      "data_cid": "6825133329372545297",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x40b1ff673920f52f%3A0x5eb7be9a19ee0111&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x40b1ff673920f52f%3A0x5eb7be9a19ee0111&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 44.480202,
+        "longitude": 26.1039055
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x40b1ff673920f52f%3A0x5eb7be9a19ee0111%218m2%213d44.480202%214d26.1039055&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.1,
+      "reviews": 153,
+      "type": "Consultant",
+      "address": "Șoseaua Pipera Nr. 42, București 020309",
+      "open_state": "Closed ⋅ Opens 9AM",
+      "hours": "Closed ⋅ Opens 9AM",
+      "operating_hours": {
+        "wednesday": "9AM–5PM",
+        "thursday": "9AM–5PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–5PM",
+        "tuesday": "9AM–5PM"
+      },
+      "phone": "021 300 3546",
+      "website": "http://www.adecco.ro/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMW8BjRhY3UX24wFLwyToNAj5aYUsb7ljPRsoa7=w122-h92-k-no"
+    },
+    {
+      "position": 14,
+      "title": "MARALY Recruitment",
+      "place_id": "ChIJVVU5VT8MSUcRS4WB5y_ConQ",
+      "data_id": "0x47490c3f55395555:0x74a2c22fe781854b",
+      "data_cid": "8404493365630043467",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x47490c3f55395555%3A0x74a2c22fe781854b&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x47490c3f55395555%3A0x74a2c22fe781854b&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 46.7669953,
+        "longitude": 23.6197874
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x47490c3f55395555%3A0x74a2c22fe781854b%218m2%213d46.7669953%214d23.6197874&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4,
+      "reviews": 1,
+      "unclaimed_listing": true,
+      "type": "Recruiter",
+      "address": "Strada Liviu Rebreanu Nr.17, Cluj-Napoca 400394",
+      "phone": "0745 904 094",
+      "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=99rfU4eMCKlUzsOqZ-5Nxg&cb_client=search.gws-prod.gps&w=80&h=92&yaw=72.389046&pitch=0&thumbfov=100"
+    },
+    {
+      "position": 15,
+      "title": "Approach People Recruitment",
+      "place_id": "ChIJyY8JwMAIZ0gRTdfMIya-NsI",
+      "data_id": "0x486708c0c0098fc9:0xc236be2623ccd74d",
+      "data_cid": "13994581963119056717",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x486708c0c0098fc9%3A0xc236be2623ccd74d&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x486708c0c0098fc9%3A0xc236be2623ccd74d&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 53.3001953,
+        "longitude": -6.1756674
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x486708c0c0098fc9%3A0xc236be2623ccd74d%218m2%213d53.3001953%214d-6.1756674&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.7,
+      "reviews": 56,
+      "type": "Employment agency",
+      "address": "Quantum House, Temple Rd, Blackrock, Co. Dublin, Ireland",
+      "open_state": "Closed ⋅ Opens 9AM Wed",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "operating_hours": {
+        "tuesday": "9AM–6PM",
+        "wednesday": "9AM–6PM",
+        "thursday": "9AM–6PM",
+        "friday": "9AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "9AM–6PM"
+      },
+      "phone": "+353 1 400 3500",
+      "website": "http://www.approachpeople.com/",
+      "user_review": "\"I would recommend for job seekers and companies alike.\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMIp15MGfngInCr5gaC_-_r2XNwf3g2Baj3iyCy=w80-h106-k-no"
+    },
+    {
+      "position": 16,
+      "title": "HOORAY Recruitment",
+      "place_id": "ChIJzxc88JkbcUgRO2GGUOvSNGY",
+      "data_id": "0x48711b99f03c17cf:0x6634d2eb5086613b",
+      "data_cid": "7364743198767735099",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x48711b99f03c17cf%3A0x6634d2eb5086613b&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x48711b99f03c17cf%3A0x6634d2eb5086613b&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 51.8976745,
+        "longitude": -2.0760397
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x48711b99f03c17cf%3A0x6634d2eb5086613b%218m2%213d51.8976745%214d-2.0760397&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.8,
+      "reviews": 129,
+      "type": "Employment agency",
+      "address": "71 Rodney Rd, Cheltenham, GL50 1HT, United Kingdom",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–5:30PM",
+        "wednesday": "8:30AM–5:30PM",
+        "thursday": "8:30AM–5:30PM",
+        "friday": "8:30AM–4PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–5:30PM"
+      },
+      "phone": "+44 1242 300228",
+      "website": "http://hoorayworks.co.uk/",
+      "user_review": "\"Placed me in a lovely position on a good rate of pay.\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNgbn2dV-FVz_XE7uQLfGY6QUzbe_Qdt-LNjnKI=w92-h92-k-no"
+    },
+    {
+      "position": 17,
+      "title": "gap personnel",
+      "place_id": "ChIJja1KRqdeeUgRPwmCXqwHPAo",
+      "data_id": "0x48795ea7464aad8d:0xa3c07ac5e82093f",
+      "data_cid": "737472875883268415",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x48795ea7464aad8d%3A0xa3c07ac5e82093f&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x48795ea7464aad8d%3A0xa3c07ac5e82093f&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 53.797675999999996,
+        "longitude": -1.551143
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x48795ea7464aad8d%3A0xa3c07ac5e82093f%218m2%213d53.797675999999996%214d-1.551143&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.4,
+      "reviews": 181,
+      "type": "Employment agency",
+      "address": "6 Park Pl, Leeds, LS1 2RU, United Kingdom",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–5PM",
+        "wednesday": "8:30AM–5PM",
+        "thursday": "8:30AM–5PM",
+        "friday": "8:30AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–5PM"
+      },
+      "phone": "+44 113 204 8585",
+      "website": "https://www.gap-personnel.com/",
+      "user_review": "\"They helped me find a permanent job that suits my difficult schedule.\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipMjq2l5WLlvLw6ggqRToko2b6bQcfutEW8YaLRW=w163-h92-k-no"
+    },
+    {
+      "position": 18,
+      "title": "Direct Response Employment Services",
+      "place_id": "ChIJ4a9WS_fVc0gRuiF_auECnvg",
+      "data_id": "0x4873d5f74b56afe1:0xf89e02e16a7f21ba",
+      "data_cid": "17914759534904025530",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x4873d5f74b56afe1%3A0xf89e02e16a7f21ba&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x4873d5f74b56afe1%3A0xf89e02e16a7f21ba&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 51.321194299999995,
+        "longitude": -2.2077171
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x4873d5f74b56afe1%3A0xf89e02e16a7f21ba%218m2%213d51.321194299999995%214d-2.2077171&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.9,
+      "reviews": 248,
+      "type": "Employment consultant",
+      "address": "50 Fore St, Trowbridge, BA14 8ES, United Kingdom",
+      "open_state": "Closed ⋅ Opens 8AM Wed",
+      "hours": "Closed ⋅ Opens 8AM Wed",
+      "operating_hours": {
+        "tuesday": "8AM–4PM",
+        "wednesday": "8AM–4PM",
+        "thursday": "8AM–4PM",
+        "friday": "8AM–4PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8AM–4PM"
+      },
+      "phone": "+44 1225 776500",
+      "website": "https://www.direct-response.co.uk/",
+      "user_review": "\"I highly recommend this agency. They have many types of job opportunities.\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipM_vRrE6t3CYjQwrcmtfm9qYMfBaxa1Ep0Usmsn=w122-h92-k-no"
+    },
+    {
+      "position": 19,
+      "title": "Jobseekers Recruitment Services Ltd",
+      "place_id": "ChIJKdush1b0bUgR9BH9N2nC1_E",
+      "data_id": "0x486df45687acdb29:0xf1d7c26937fd11f4",
+      "data_cid": "17426611040300110324",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x486df45687acdb29%3A0xf1d7c26937fd11f4&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x486df45687acdb29%3A0xf1d7c26937fd11f4&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 51.0157704,
+        "longitude": -3.0993681
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x486df45687acdb29%3A0xf1d7c26937fd11f4%218m2%213d51.0157704%214d-3.0993681&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 4.9,
+      "reviews": 37,
+      "type": "Recruiter",
+      "address": "Magdalene St, Taunton, TA1 1SG, United Kingdom",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–5PM",
+        "wednesday": "8:30AM–5PM",
+        "thursday": "8:30AM–5PM",
+        "friday": "8:30AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–5PM"
+      },
+      "phone": "+44 1823 335674",
+      "website": "http://www.job-seekers.co.uk/",
+      "user_review": "\"Very professional team that really do listen to your job requirements.\"",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipP2S2Tkb-pgqmKXq7HnQgG__X2sb1YgeBB_HnF8=w184-h92-k-no"
+    },
+    {
+      "position": 20,
+      "title": "Si Recruitment",
+      "place_id": "ChIJf4zMofxTeUgRCNtd5RM28YE",
+      "data_id": "0x487953fca1cc8c7f:0x81f13613e55ddb08",
+      "data_cid": "9363324559360383752",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x487953fca1cc8c7f%3A0x81f13613e55ddb08&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x487953fca1cc8c7f%3A0x81f13613e55ddb08&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 53.992727699999996,
+        "longitude": -1.5509823
+      },
+      "place_id_search": "https://serpapi.com/search.json?data=%214m5%213m4%211s0x487953fca1cc8c7f%3A0x81f13613e55ddb08%218m2%213d53.992727699999996%214d-1.5509823&engine=google_maps&google_domain=google.com&hl=en&type=place",
+      "rating": 5,
+      "reviews": 22,
+      "type": "Employment agency",
+      "address": "Windsor House, Cornwall Rd, Harrogate HG1 2PW, United Kingdom",
+      "open_state": "Closed ⋅ Opens 8:30AM Wed",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "operating_hours": {
+        "tuesday": "8:30AM–5PM",
+        "wednesday": "8:30AM–5PM",
+        "thursday": "8:30AM–5PM",
+        "friday": "8:30AM–5PM",
+        "saturday": "Closed",
+        "sunday": "Closed",
+        "monday": "8:30AM–5PM"
+      },
+      "phone": "+44 1423 508736",
+      "website": "http://www.sirecruitment.com/",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipM5RoPdpMktFfL0TR_uG1buCzODPi-FBPHfxA-4=w262-h92-k-no"
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&ll=%4034.0522%2C118.2437%2C3z&q=job+placement+services&start=20&type=search"
+  }
+}
