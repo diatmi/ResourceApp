@@ -1,0 +1,69 @@
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #000070;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 12px 24px #000070;
+}
+.card-body {
+    background-color: #4527a0;
+    padding: 10px;
+    position: relative;
+    width: 17rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 18rem;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.card-footer {
+    border: none;
+    background-color: #7953d2;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #000070;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn-secondary {
+    background-color: #5e92f3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}

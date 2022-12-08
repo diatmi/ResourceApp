@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"/>
     <title>ResourceApp</title>
 </head>
-<body>
+<body style="background-color: #003c8f">
 <script>
     function makeCard(imgLink, title, address, rating, totalRatings, webLink, phone) {
+        if (phone == null) {
+            phone = "Phone N/A";
+        }
         return `
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem; margin: 12px; border-radius: 15px; border: none">
             <img class="card-img-top" src="${imgLink}" style="height: 180px;">
-            <div class="card-body">
-                <h5 class="card-title">${title}</h5>
+            <div class="card-body" style="height: 10rem;">
+                <h5 class="card-title" style="color: white;">${title}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${address}</h6>
-                <input data-role="rating" data-value="${rating}" data-message="(${totalRatings})" data-static="true">
+                <div style="position: absolute; bottom: 0" >
+                    <input data-stared-color="#5e92f3" data-role="rating" data-value="${rating}" data-message='<span style="color: #5e92f3;">(${totalRatings})</span>' data-static="true">
+                </div>
             </div>
-            <div class="card-footer">
-                <div class="card-body">
+            <div class="card-body card-footer" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-color: #7953d2">
                 <a href="${webLink}" class="btn btn-primary">Join</a>
                 <a class="btn btn-secondary">${phone}</a>
-                </div>
             </div>
         </div>
         `
@@ -73,9 +77,9 @@
     loadJSON("Fremont");
 </script>
 
-<div id="cards"/>
+<h1 style="font-size: 60px; margin-left: 10px">Job Placement Services</h1>
+<div id="cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar"/>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 </body>
 </html>
