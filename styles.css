@@ -20,13 +20,13 @@
     background-color: #4527a0;
     padding: 10px;
     position: relative;
-    width: 17rem;
+    width: 20rem;
 }
 
 .card-img-top {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    width: 18rem;
+    width: 20rem;
 }
 
 .card-title {

@@ -11,13 +11,27 @@
     <title>ResourceApp</title>
 </head>
 <body style="background-color: #003c8f">
+
+<div style="display:flex; flex-direction: row; justify-content: left; align-items: start;">
+    <h1 style="font-size: 60px; margin-left: 10px">Job Placement Services</h1>
+    <select name="city" id="citypicker" style="margin-top:27px; margin-left: 10px">
+        <option value="Fremont" selected>Fremont, California</option>
+        <option value="LosAngeles">Los Angeles, California</option>
+        <option value="Newark">Newark, New Jersey</option>
+        <option value="NewOrleans">New Orleans, Louisiana</option>
+        <option value="SanFrancisco">San Francisco, California</option>
+    </select>
+</div>
+
+<div id="cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar"/>
+
 <script>
     function makeCard(imgLink, title, address, rating, totalRatings, webLink, phone) {
         if (phone == null) {
             phone = "Phone N/A";
         }
         return `
-        <div class="card" style="width: 18rem; margin: 12px; border-radius: 15px; border: none">
+        <div class="card" style="margin: 12px; border-radius: 15px; border: none">
             <img class="card-img-top" src="${imgLink}" style="height: 180px;">
             <div class="card-body" style="height: 10rem;">
                 <h5 class="card-title" style="color: white;">${title}</h5>
@@ -74,12 +88,19 @@
             });
     }
 
+    function clearCards() {
+        let div = document.getElementById("cards");
+        div.innerHTML = "";
+    }
+
+    document.getElementById('citypicker').onchange = function() {
+        console.log("changed");
+        clearCards();
+        loadJSON(this.value);
+    }
+
     loadJSON("Fremont");
 </script>
-
-<h1 style="font-size: 60px; margin-left: 10px">Job Placement Services</h1>
-<div id="cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar"/>
-
 <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 </body>
 </html>
