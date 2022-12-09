@@ -68,6 +68,11 @@
     border-radius: 15px;
 }
 
+.new-box-aqua {
+    background-color: rgb(165 243 252);
+    box-shadow: 0 1px rgb(103 232 249), 0 2px rgb(34 211 238), 0 3px rgb(34 211 238), 0 4px rgb(6 182 212), 0 5px rgb(6 182 212), 0 7px 7px rgba(0, 0, 0, 0.6);
+}
+
 .w-100pc {
     width: 100%;
 }
