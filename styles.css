@@ -67,3 +67,11 @@
     cursor: pointer;
     border-radius: 15px;
 }
+
+.w-100pc {
+    width: 100%;
+}
+
+.h-100pc {
+    height: 100%;
+}

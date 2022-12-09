@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-            rel="stylesheet"/>
-    <title>ResourceApp</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+        rel="stylesheet"/>
+  <title>ResourceApp</title>
 </head>
 <body style="background-color: #003c8f">
 
 <div style="display:flex; flex-direction: row; justify-content: left; align-items: start;">
-    <h1 style="font-size: 60px; margin-left: 10px">Job Placement Services</h1>
-    <select name="city" id="citypicker" style="margin-top:27px; margin-left: 10px">
-        <option value="Fremont" selected>Fremont, California</option>
-        <option value="LosAngeles">Los Angeles, California</option>
-        <option value="Newark">Newark, New Jersey</option>
-        <option value="NewOrleans">New Orleans, Louisiana</option>
-        <option value="SanFrancisco">San Francisco, California</option>
-    </select>
+  <h1 style="font-size: 60px; margin-left: 10px">Job Placement Services</h1>
+  <select name="city" id="citypicker" style="width: 160px; position: absolute; left: calc(100vw - 180px); top: 20px">
+    <option value="Fremont" selected>Fremont, California</option>
+    <option value="LosAngeles">Los Angeles, California</option>
+    <option value="Newark">Newark, New Jersey</option>
+    <option value="NewOrleans">New Orleans, Louisiana</option>
+    <option value="SanFrancisco">San Francisco, California</option>
+  </select>
 </div>
 
-<div id="cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar"/>
+<div id="cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar"></div>
 
 <script>
-    function makeCard(imgLink, title, address, rating, totalRatings, webLink, phone) {
-        if (phone == null) {
-            phone = "Phone N/A";
-        }
-        return `
+  function makeCard(imgLink, title, address, rating, totalRatings, webLink, phone) {
+    if (phone == null) {
+      phone = "Phone N/A";
+    }
+    return `
         <div class="card" style="margin: 12px; border-radius: 15px; border: none">
             <img class="card-img-top" src="${imgLink}" style="height: 180px;">
             <div class="card-body" style="height: 10rem;">
@@ -46,60 +46,61 @@
             </div>
         </div>
         `
-        // return `
-        // <div class="col">
-        // <div class="card mb-3" style="max-width: 520px;">
-        //   <div class="row g-0">
-        //     <div class="col-md-4">
-        //       <img src="${imgLink}" class="img-fluid">
-        //     </div>
-        //     <div class="col-md-8">
-        //       <div class="card-body">
-        //         <h5 class="card-title">${title}</h5>
-        //         <h6 class="card-subtitle mb-2 text-muted">${address}</h6>
-        //         <input data-role="rating" data-value="${rating}" data-message="(${totalRatings})" data-static="true">
-        //         <div class="card-body">
-        //             <a href="${webLink}" class="btn btn-primary">Join</a>
-        //             <a class="btn btn-secondary">${phone}</a>
-        //         </div>
-        //       </div>
-        //     </div>
-        //   </div>
-        // </div>
-        // </div>
-        // `
-    }
-    function loadJSON(name) {
-        name = "json files/Job Placement Services/" + name + ".json";
-        fetch(name)
-            .then(response => response.json())
-            .then(data => {
-                // get the div to put the cards in
-                let div = document.getElementById("cards");
-                // loop through the list data["local_results"]
-                for (let i = 0; i < data["local_results"].length; i++) {
-                    // get the current item
-                    let item = data["local_results"][i];
-                    // make a card
-                    let card = makeCard(item["thumbnail"], item["title"], item["address"], item["rating"], item["reviews"], item["website"], item["phone"]);
-                    // add the card to the div
-                    div.innerHTML += card;
-                }
-            });
-    }
+    // return `
+    // <div class="col">
+    // <div class="card mb-3" style="max-width: 520px;">
+    //   <div class="row g-0">
+    //     <div class="col-md-4">
+    //       <img src="${imgLink}" class="img-fluid">
+    //     </div>
+    //     <div class="col-md-8">
+    //       <div class="card-body">
+    //         <h5 class="card-title">${title}</h5>
+    //         <h6 class="card-subtitle mb-2 text-muted">${address}</h6>
+    //         <input data-role="rating" data-value="${rating}" data-message="(${totalRatings})" data-static="true">
+    //         <div class="card-body">
+    //             <a href="${webLink}" class="btn btn-primary">Join</a>
+    //             <a class="btn btn-secondary">${phone}</a>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    // </div>
+    // `
+  }
 
-    function clearCards() {
-        let div = document.getElementById("cards");
-        div.innerHTML = "";
-    }
+  function loadJSON(name) {
+    name = "json files/Job Placement Services/" + name + ".json";
+    fetch(name)
+        .then(response => response.json())
+        .then(data => {
+          // get the div to put the cards in
+          let div = document.getElementById("cards");
+          // loop through the list data["local_results"]
+          for (let i = 0; i < data["local_results"].length; i++) {
+            // get the current item
+            let item = data["local_results"][i];
+            // make a card
+            let card = makeCard(item["thumbnail"], item["title"], item["address"], item["rating"], item["reviews"], item["website"], item["phone"]);
+            // add the card to the div
+            div.innerHTML += card;
+          }
+        });
+  }
 
-    document.getElementById('citypicker').onchange = function() {
-        console.log("changed");
-        clearCards();
-        loadJSON(this.value);
-    }
+  function clearCards() {
+    let div = document.getElementById("cards");
+    div.innerHTML = "";
+  }
 
-    loadJSON("Fremont");
+  document.getElementById('citypicker').onchange = function () {
+    console.log("changed");
+    clearCards();
+    loadJSON(this.value);
+  }
+
+  loadJSON("Fremont");
 </script>
 <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 </body>
