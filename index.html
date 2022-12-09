@@ -9,12 +9,16 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
         rel="stylesheet"/>
   <title>ResourceApp</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #003c8f">
 
 <div style="display:flex; flex-direction: row; justify-content: left; align-items: start;">
-  <h1 style="font-size: 60px; margin-left: 10px">Job Placement Services</h1>
-  <select name="city" class="new-box-aqua p-2" id="citypicker" style="width: 200px; position: absolute; left: calc(100vw - 200px - 20px); top: 20px">
+  <h1 style="font-size: 60px; margin-left: 10px; color: black">Job Placement Services</h1>
+  <select name="city" class="new-box-aqua p-2" id="citypicker" style="width: 250px; position: absolute; left: calc(100vw - 250px - 20px); top: 20px">
     <option value="Fremont" selected>Fremont, California</option>
     <option value="LosAngeles">Los Angeles, California</option>
     <option value="Newark">Newark, New Jersey</option>
@@ -32,7 +36,7 @@
     }
     return `
         <div class="card" style="margin: 12px; border-radius: 15px; border: none">
-            <img class="card-img-top" src="${imgLink}" style="height: 180px;">
+            <img class="card-img-top" src="${imgLink}" style="height: 180px;" onerror="this.onerror=null; this.src='assets/default.png'">
             <div class="card-body" style="height: 10rem;">
                 <h5 class="card-title" style="color: white;">${title}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${address}</h6>
