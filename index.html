@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-        rel="stylesheet"/>
-  <title>ResourceApp</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+          rel="stylesheet"/>
+    <title>ResourceApp</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #003c8f">
 
-<div style="display:flex; flex-direction: row; justify-content: left; align-items: start;">
-  <h1 style="font-size: 60px; margin-left: 10px; color: black">Job Placement Services</h1>
-  <select name="city" class="new-box-aqua p-2" id="citypicker" style="width: 250px; position: absolute; left: calc(100vw - 250px - 20px); top: 20px">
-    <option value="Fremont" selected>Fremont, California</option>
-    <option value="LosAngeles">Los Angeles, California</option>
-    <option value="Newark">Newark, New Jersey</option>
-    <option value="NewOrleans">New Orleans, Louisiana</option>
-    <option value="SanFrancisco">San Francisco, California</option>
-  </select>
-</div>
+<script charset="UTF-8" src="scripts/fuzz.js"></script>
 
-<div id="cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar"></div>
+<div id="main"></div>
 
 <script>
-  function makeCard(imgLink, title, address, rating, totalRatings, webLink, phone) {
-    if (phone == null) {
-      phone = "Phone N/A";
+    function arrToLis(arr, elementToString) {
+        let str = ""
+        let idx = 0
+        for (const thing of arr) {
+            str += elementToString(thing, idx)
+            idx++
+        }
+        return str
     }
-    return `
+
+    function makeEducationRequirements() {
+        return `
+      <div class="top-6 left-6 new-box-aqua h-full-margin w-full-margin monospaced">
+        <div style="display:flex; flex-direction: row; justify-content: left; align-items: center;">
+          <h1 style="font-size: 60px; margin-left: 10px;" class="new-text-aqua w-100 pt-2">Education Requirements</h1>
+          <div style="display:flex; width:52%; flex-direction: row; justify-content: right; align-items: center; gap: 20px;">
+            <button
+              class="${BUTTON_TRANSITION} new-text-aqua new-box-aqua p-2 ml-3 mr-3.5 border-cyan-400 border-solid border-2"
+              onclick="makeEducationRequirements_div1_button_onclick()"
+            >
+              See Job Placement Services
+            </button>
+          </div>
+        </div>
+        <div class="w-100 p-2 overflow-y-auto" style="height: calc(100% - 60px - 1rem)">
+          <div class="pt-4"></div>
+          <textarea name="jobType" id="jobTypeTextArea" cols="30" rows="2" class="transition ease-in-out duration-200 f-scale-110 f-translate-x-10 new-box-aqua border-cyan-400 border-solid border-2 resize-none"></textarea>
+          <div class="pt-4"></div>
+          <ol class="pl-6 new-text-aqua" id="olasdflk">
+            ${arrToLis(educationReqs, (it, idx) => `<li class="list-disc ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded}</li>`)}
+          </ol>
+        </div>
+      </div>
+    `
+    }
+
+    function makeCard(imgLink, title, address, rating, totalRatings, webLink, phone) {
+        if (phone == null) {
+            phone = "Phone N/A";
+        }
+        return `
         <div class="card" style="margin: 12px; border-radius: 15px; border: none">
             <img class="card-img-top" src="${imgLink}" style="height: 180px;" onerror="this.onerror=null; this.src='assets/default.png'">
             <div class="card-body" style="height: 10rem;">
@@ -50,61 +77,175 @@
             </div>
         </div>
         `
-    // return `
-    // <div class="col">
-    // <div class="card mb-3" style="max-width: 520px;">
-    //   <div class="row g-0">
-    //     <div class="col-md-4">
-    //       <img src="${imgLink}" class="img-fluid">
-    //     </div>
-    //     <div class="col-md-8">
-    //       <div class="card-body">
-    //         <h5 class="card-title">${title}</h5>
-    //         <h6 class="card-subtitle mb-2 text-muted">${address}</h6>
-    //         <input data-role="rating" data-value="${rating}" data-message="(${totalRatings})" data-static="true">
-    //         <div class="card-body">
-    //             <a href="${webLink}" class="btn btn-primary">Join</a>
-    //             <a class="btn btn-secondary">${phone}</a>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-    // </div>
-    // `
-  }
+    }
 
-  function loadJSON(name) {
-    name = "json files/Job Placement Services/" + name + ".json";
-    fetch(name)
-        .then(response => response.json())
-        .then(data => {
-          // get the div to put the cards in
-          let div = document.getElementById("cards");
-          // loop through the list data["local_results"]
-          for (let i = 0; i < data["local_results"].length; i++) {
-            // get the current item
-            let item = data["local_results"][i];
-            // make a card
-            let card = makeCard(item["thumbnail"], item["title"], item["address"], item["rating"], item["reviews"], item["website"], item["phone"]);
-            // add the card to the div
-            div.innerHTML += card;
-          }
-        });
-  }
+    function loadJSON(name) {
+        name = "data/Job Placement Services/" + name + ".json";
+        fetch(name)
+            .then(response => response.json())
+            .then(data => {
+                // get the div to put the cards in
+                let div = document.getElementById("cards");
+                // loop through the list data["local_results"]
+                for (let i = 0; i < data["local_results"].length; i++) {
+                    // get the current item
+                    let item = data["local_results"][i];
+                    // make a card
+                    let card = makeCard(item["thumbnail"], item["title"], item["address"], item["rating"], item["reviews"], item["website"], item["phone"]);
+                    // add the card to the div
+                    div.innerHTML += card;
+                }
+            });
+    }
 
-  function clearCards() {
-    let div = document.getElementById("cards");
-    div.innerHTML = "";
-  }
+    // name: String -> Array<Object { title, code, educationNeeded, workExperienceNeeded, onTheJobTrainingNeeded }>
+    function parseEducationCSV(name) {
+        let arr = []
+        name = "data/EducationRequirements/" + name + ".csv"
+        fetch(name)
+            .then(response => response.text())
+            .then(data => {
+                for (const line of data.split("\n")) {
+                    if (line.startsWith("#")) continue
+                    let splits = [];
+                    let inQuotes = false;
+                    let current = "";
+                    for (const char of line) {
+                        if (char === '"') {
+                            inQuotes = !inQuotes
+                        } else if (char === "," && !inQuotes) {
+                            splits.push(current)
+                            current = ""
+                        } else {
+                            current += char
+                        }
+                    }
+                    splits.push(current)
+                    arr.push({
+                        title: splits[0],
+                        code: splits[1],
+                        educationNeeded: splits[2],
+                        workExperienceNeeded: splits[3],
+                        onTheJobTrainingNeeded: splits[4]
+                    })
+                }
+            })
+        return arr;
+    }
 
-  document.getElementById('citypicker').onchange = function () {
-    console.log("changed");
-    clearCards();
-    loadJSON(this.value);
-  }
+    function clearCards() {
+        let div = document.getElementById("cards");
+        div.innerHTML = "";
+    }
 
-  loadJSON("Fremont");
+    function mainScreen() {
+        // get the main div
+        let div = document.getElementById("main");
+
+        div.innerHTML = `
+      <div style="display:flex; flex-direction: row; justify-content: left; align-items: start;">
+          <h1 style="font-size: 60px; margin-left: 10px; color: black; width: 1000px">Job Placement Services</h1>
+          <div style="display:flex; width:52%; flex-direction: row; justify-content: right; align-items: center; gap: 20px; margin-top: 20px; margin-right: 10px">
+            <button class="new-text-aqua new-box-aqua p-2 ml-3 btn" onclick="loadEducationRequirements()">Job Requirements</button>
+            <select class="new-box-aqua p-2 btn" name="city" id="citypicker">
+              <option value="Fremont" selected>Fremont, California</option>
+              <option value="LosAngeles">Los Angeles, California</option>
+              <option value="Newark">Newark, New Jersey</option>
+              <option value="NewOrleans">New Orleans, Louisiana</option>
+              <option value="SanFrancisco">San Francisco, California</option>
+           </select>
+         </div>
+       </div>
+
+       <div id="cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar" style="padding-bottom: 40px"></div>
+      `;
+
+        document.getElementById('citypicker').onchange = function () {
+            console.log("changed");
+            clearCards();
+            loadJSON(this.value);
+        }
+
+        loadJSON("Fremont");
+    }
+
+    function loadEducationRequirements() {
+        // get the main div
+        let div = document.getElementById("main");
+        div.innerHTML = `
+        <div style="display:flex; flex-direction: row; justify-content: left; align-items: center;">
+          <h1 style="font-size: 60px; margin-left: 10px; color: black" class="new-text-aqua w-100 pt-2">Education Requirements</h1>
+          <div style="display:flex; width:52%; flex-direction: row; justify-content: right; align-items: center; gap: 20px;">
+            <button
+              class="new-text-aqua new-box-aqua p-2 ml-3 mr-3.5 border-cyan-400 btn"
+              onclick="mainScreen()">
+              Go Back
+            </button>
+          </div>
+        </div>
+        <div class="w-100 p-2 overflow-y-auto" style="height: calc(100% - 60px - 1rem)">
+          <div class="pt-4"></div>
+          <textarea name="jobType" id="jobTypeTextArea" cols="30" rows="2" style="display: block; margin-left: auto;margin-right: auto; background-image: url(assets/search.png); background-repeat: no-repeat; background-position: 7px 7px; padding-left:40px;" class="btn new-input-aqua border-cyan-400 resize-none">Pilot</textarea>
+          <div class="wide-card" style="background-color: #7953d2; width: fit-content">
+              <p style="text-align: center; font-size: large">🎓: degree | ⌛: experience needed | 💪: on the job training needed</p>
+          </div>
+              <div class="wide-card btn" style="padding: 10px; width: 23%; height: fit-content; background-color: aliceblue; position: absolute; margin-left: 1%; border-radius: 15px">
+                <h1 style="color: black; font-size: xx-large">How this helps.</h1>
+                <p>Using data from 2021, we can show you a variety of jobs, including the one you want and possibilities you haven't considered. We can give an estimate of the training needed for the job, the experience needed, and the degree you need for the job.</p>
+              </div>
+              <ol class="pl-6 new-text-aqua" id="olasdflk">
+                ${arrToLis(educationReqs, (it, idx) => `<li class="list-disc ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded}</li>`)}
+              </ol>
+        </div>
+      `;
+
+        let jobIdTextArea = document.getElementById("jobTypeTextArea")
+        if (jobIdTextArea != null) {
+            jobIdTextArea.addEventListener("keydown", function (ev) {
+                if (ev.key === "Enter") {
+                    let val = document.getElementById("jobTypeTextArea").value
+                    educationReqs.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
+                    educationAttainments.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
+                    document.getElementById("olasdflk").innerHTML = arrToLis(educationReqs, (it, idx) => `
+                    <div class="wide-card ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">
+                        <!-- ${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded} -->
+                        <div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between">
+                            <h1 class="wide-card-h1" style="color: aliceblue">${it.title}</h1>
+                            <img class="btn" src="assets/info.png" width="32"/>
+                        </div>
+                        <p class="wide-card-h1" style="color: aliceblue; font-size: medium">🎓 ${it.educationNeeded}</p>
+                        <p class="wide-card-h1" style="color: aliceblue; font-size: medium">⌛ ${it.workExperienceNeeded}</p>
+                        <p class="wide-card-h1" style="color: aliceblue; font-size: medium">💪 ${it.onTheJobTrainingNeeded}</p>
+                    </div>
+                    `)
+                    ev.preventDefault()
+                }
+            })
+        }
+
+        // load the initial pilot data
+        let val = document.getElementById("jobTypeTextArea").value
+        educationReqs.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
+        educationAttainments.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
+        document.getElementById("olasdflk").innerHTML = arrToLis(educationReqs, (it, idx) => `
+            <div class="wide-card ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">
+                <!-- ${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded} -->
+                <div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between">
+                    <h1 class="wide-card-h1" style="color: aliceblue">${it.title}</h1>
+                    <img class="btn" src="assets/info.png" width="32"/>
+                </div>
+                <p class="wide-card-h1" style="color: aliceblue; font-size: medium">🎓 ${it.educationNeeded}</p>
+                <p class="wide-card-h1" style="color: aliceblue; font-size: medium">⌛ ${it.workExperienceNeeded}</p>
+                <p class="wide-card-h1" style="color: aliceblue; font-size: medium">💪 ${it.onTheJobTrainingNeeded}</p>
+            </div>
+        `)
+    }
+
+    // main
+    mainScreen();
+    educationReqs = parseEducationCSV("education")
+    educationAttainments = parseEducationCSV("education_attainment")
+    console.log(educationReqs)
 </script>
 <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 </body>
