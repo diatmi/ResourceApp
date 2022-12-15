@@ -19,6 +19,38 @@
 <script charset="UTF-8" src="scripts/fuzz.js"></script>
 
 <div id="main"></div>
+<div id="jobreqs">
+    <div style="display:flex; flex-direction: row; justify-content: left; align-items: center;">
+        <h1 style="font-size: 60px; margin-left: 10px; color: black" class="new-text-aqua w-100 pt-2">Education
+            Requirements</h1>
+        <div style="display:flex; width:52%; flex-direction: row; justify-content: right; align-items: center; gap: 20px;">
+            <button
+                    class="new-text-aqua new-box-aqua p-2 ml-3 mr-3.5 border-cyan-400 btn"
+                    onclick="mainScreen()">
+                Go Back
+            </button>
+        </div>
+    </div>
+    <div class="w-100 p-2 overflow-y-auto" style="height: calc(100% - 60px - 1rem)">
+        <div class="pt-4"></div>
+        <textarea name="jobType" id="jobTypeTextArea" cols="30" rows="2"
+                  style="display: block; margin-left: auto;margin-right: auto; background-image: url(assets/search.png); background-repeat: no-repeat; background-position: 7px 7px; padding-left:40px;"
+                  class="btn new-input-aqua border-cyan-400 resize-none">Pilot</textarea>
+        <div class="wide-card" style="background-color: #7953d2; width: fit-content">
+            <p style="text-align: center; font-size: large">🎓: degree | ⌛: experience needed | 💪: on the job training
+                needed</p>
+        </div>
+        <div class="wide-card btn"
+             style="padding: 10px; width: 23%; height: fit-content; background-color: aliceblue; position: absolute; margin-left: 1%; border-radius: 15px">
+            <h1 style="color: black; font-size: xx-large">How this helps.</h1>
+            <p>Using data from 2021, we can show you a variety of jobs, including the one you want and possibilities you
+                haven't considered. We can give an estimate of the training needed for the job, the experience needed,
+                and the degree you need for the job.</p>
+        </div>
+        <ol class="pl-6 new-text-aqua" id="olasdflk">
+        </ol>
+    </div>
+</div>
 
 <script>
     function arrToLis(arr, elementToString) {
@@ -29,32 +61,6 @@
             idx++
         }
         return str
-    }
-
-    function makeEducationRequirements() {
-        return `
-      <div class="top-6 left-6 new-box-aqua h-full-margin w-full-margin monospaced">
-        <div style="display:flex; flex-direction: row; justify-content: left; align-items: center;">
-          <h1 style="font-size: 60px; margin-left: 10px;" class="new-text-aqua w-100 pt-2">Education Requirements</h1>
-          <div style="display:flex; width:52%; flex-direction: row; justify-content: right; align-items: center; gap: 20px;">
-            <button
-              class="${BUTTON_TRANSITION} new-text-aqua new-box-aqua p-2 ml-3 mr-3.5 border-cyan-400 border-solid border-2"
-              onclick="makeEducationRequirements_div1_button_onclick()"
-            >
-              See Job Placement Services
-            </button>
-          </div>
-        </div>
-        <div class="w-100 p-2 overflow-y-auto" style="height: calc(100% - 60px - 1rem)">
-          <div class="pt-4"></div>
-          <textarea name="jobType" id="jobTypeTextArea" cols="30" rows="2" class="transition ease-in-out duration-200 f-scale-110 f-translate-x-10 new-box-aqua border-cyan-400 border-solid border-2 resize-none"></textarea>
-          <div class="pt-4"></div>
-          <ol class="pl-6 new-text-aqua" id="olasdflk">
-            ${arrToLis(educationReqs, (it, idx) => `<li class="list-disc ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded}</li>`)}
-          </ol>
-        </div>
-      </div>
-    `
     }
 
     function makeCard(imgLink, title, address, rating, totalRatings, webLink, phone) {
@@ -98,8 +104,7 @@
             });
     }
 
-    // name: String -> Array<Object { title, code, educationNeeded, workExperienceNeeded, onTheJobTrainingNeeded }>
-    function parseEducationCSV(name) {
+    function parseCSV(name, columns) {
         let arr = []
         name = "data/EducationRequirements/" + name + ".csv"
         fetch(name)
@@ -121,16 +126,14 @@
                         }
                     }
                     splits.push(current)
-                    arr.push({
-                        title: splits[0],
-                        code: splits[1],
-                        educationNeeded: splits[2],
-                        workExperienceNeeded: splits[3],
-                        onTheJobTrainingNeeded: splits[4]
-                    })
+                    let obj = {}
+                    for (let i = 0; i < columns.length; i++) {
+                        obj[columns[i]] = splits[i]
+                    }
+                    arr.push(obj)
                 }
             })
-        return arr;
+        return arr
     }
 
     function clearCards() {
@@ -141,6 +144,10 @@
     function mainScreen() {
         // get the main div
         let div = document.getElementById("main");
+        let div2 = document.getElementById("jobreqs");
+
+        div.hidden = false;
+        div2.hidden = true;
 
         div.innerHTML = `
       <div style="display:flex; flex-direction: row; justify-content: left; align-items: start;">
@@ -171,33 +178,11 @@
 
     function loadEducationRequirements() {
         // get the main div
-        let div = document.getElementById("main");
-        div.innerHTML = `
-        <div style="display:flex; flex-direction: row; justify-content: left; align-items: center;">
-          <h1 style="font-size: 60px; margin-left: 10px; color: black" class="new-text-aqua w-100 pt-2">Education Requirements</h1>
-          <div style="display:flex; width:52%; flex-direction: row; justify-content: right; align-items: center; gap: 20px;">
-            <button
-              class="new-text-aqua new-box-aqua p-2 ml-3 mr-3.5 border-cyan-400 btn"
-              onclick="mainScreen()">
-              Go Back
-            </button>
-          </div>
-        </div>
-        <div class="w-100 p-2 overflow-y-auto" style="height: calc(100% - 60px - 1rem)">
-          <div class="pt-4"></div>
-          <textarea name="jobType" id="jobTypeTextArea" cols="30" rows="2" style="display: block; margin-left: auto;margin-right: auto; background-image: url(assets/search.png); background-repeat: no-repeat; background-position: 7px 7px; padding-left:40px;" class="btn new-input-aqua border-cyan-400 resize-none">Pilot</textarea>
-          <div class="wide-card" style="background-color: #7953d2; width: fit-content">
-              <p style="text-align: center; font-size: large">🎓: degree | ⌛: experience needed | 💪: on the job training needed</p>
-          </div>
-              <div class="wide-card btn" style="padding: 10px; width: 23%; height: fit-content; background-color: aliceblue; position: absolute; margin-left: 1%; border-radius: 15px">
-                <h1 style="color: black; font-size: xx-large">How this helps.</h1>
-                <p>Using data from 2021, we can show you a variety of jobs, including the one you want and possibilities you haven't considered. We can give an estimate of the training needed for the job, the experience needed, and the degree you need for the job.</p>
-              </div>
-              <ol class="pl-6 new-text-aqua" id="olasdflk">
-                ${arrToLis(educationReqs, (it, idx) => `<li class="list-disc ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded}</li>`)}
-              </ol>
-        </div>
-      `;
+        let div = document.getElementById("jobreqs");
+        let main = document.getElementById("main");
+
+        main.hidden = true;
+        div.hidden = false;
 
         let jobIdTextArea = document.getElementById("jobTypeTextArea")
         if (jobIdTextArea != null) {
@@ -206,18 +191,32 @@
                     let val = document.getElementById("jobTypeTextArea").value
                     educationReqs.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
                     educationAttainments.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
-                    document.getElementById("olasdflk").innerHTML = arrToLis(educationReqs, (it, idx) => `
-                    <div class="wide-card ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">
-                        <!-- ${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded} -->
-                        <div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between">
-                            <h1 class="wide-card-h1" style="color: aliceblue">${it.title}</h1>
-                            <img class="btn" src="assets/info.png" width="32"/>
+                    document.getElementById("olasdflk").innerHTML = arrToLis(educationReqs, (it, idx) => {
+                        let tooltipInfo = educationAttainments[idx];
+                        console.log(tooltipInfo);
+                        return `
+                        <div class="wide-card ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">
+                            <!-- ${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded} -->
+                            <div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between">
+                                <h1 class="wide-card-h1" style="color: aliceblue">${it.title}</h1>
+                                <div style="cursor: pointer" class="tooltip">&#9432;
+                                    <div class="tooltiptext" style="width: 300px">
+                                        <p style="color: aliceblue; font-size: medium">Less than HS diploma: ${tooltipInfo.lt_hs_dip}%</p>
+                                        <p style="color: aliceblue; font-size: medium">HS diploma: ${tooltipInfo.hs_dip}%</p>
+                                        <p style="color: aliceblue; font-size: medium">Some college: ${tooltipInfo.some_college}%</p>
+                                        <p style="color: aliceblue; font-size: medium">Associate's degree: ${tooltipInfo.assoc_degree}%</p>
+                                        <p style="color: aliceblue; font-size: medium">Bachelor's degree: ${tooltipInfo.bach_degree}%</p>
+                                        <p style="color: aliceblue; font-size: medium">Master's degree: ${tooltipInfo.master_degree}%</p>
+                                        <p style="color: aliceblue; font-size: medium">Professional/doctorate degree: ${tooltipInfo.doctorate_degree}%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="wide-card-h1" style="color: aliceblue; font-size: medium">🎓 ${it.educationNeeded}</p>
+                            <p class="wide-card-h1" style="color: aliceblue; font-size: medium">⌛ ${it.workExperienceNeeded}</p>
+                            <p class="wide-card-h1" style="color: aliceblue; font-size: medium">💪 ${it.onTheJobTrainingNeeded}</p>
                         </div>
-                        <p class="wide-card-h1" style="color: aliceblue; font-size: medium">🎓 ${it.educationNeeded}</p>
-                        <p class="wide-card-h1" style="color: aliceblue; font-size: medium">⌛ ${it.workExperienceNeeded}</p>
-                        <p class="wide-card-h1" style="color: aliceblue; font-size: medium">💪 ${it.onTheJobTrainingNeeded}</p>
-                    </div>
-                    `)
+        `
+                    });
                     ev.preventDefault()
                 }
             })
@@ -227,25 +226,38 @@
         let val = document.getElementById("jobTypeTextArea").value
         educationReqs.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
         educationAttainments.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
-        document.getElementById("olasdflk").innerHTML = arrToLis(educationReqs, (it, idx) => `
+        document.getElementById("olasdflk").innerHTML = arrToLis(educationReqs, (it, idx) => {
+            let tooltipInfo = educationAttainments[idx];
+            console.log(tooltipInfo);
+            return `
             <div class="wide-card ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">
                 <!-- ${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded} -->
                 <div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between">
                     <h1 class="wide-card-h1" style="color: aliceblue">${it.title}</h1>
-                    <img class="btn" src="assets/info.png" width="32"/>
+                    <div style="cursor: pointer" class="tooltip">&#9432;
+                        <div class="tooltiptext" style="width: 300px">
+                            <p style="color: aliceblue; font-size: medium">Less than HS diploma: ${tooltipInfo.lt_hs_dip}%</p>
+                            <p style="color: aliceblue; font-size: medium">HS diploma: ${tooltipInfo.hs_dip}%</p>
+                            <p style="color: aliceblue; font-size: medium">Some college: ${tooltipInfo.some_college}%</p>
+                            <p style="color: aliceblue; font-size: medium">Associate's degree: ${tooltipInfo.assoc_degree}%</p>
+                            <p style="color: aliceblue; font-size: medium">Bachelor's degree: ${tooltipInfo.bach_degree}%</p>
+                            <p style="color: aliceblue; font-size: medium">Master's degree: ${tooltipInfo.master_degree}%</p>
+                            <p style="color: aliceblue; font-size: medium">Professional/doctorate degree: ${tooltipInfo.doctorate_degree}%</p>
+                        </div>
+                    </div>
                 </div>
                 <p class="wide-card-h1" style="color: aliceblue; font-size: medium">🎓 ${it.educationNeeded}</p>
                 <p class="wide-card-h1" style="color: aliceblue; font-size: medium">⌛ ${it.workExperienceNeeded}</p>
                 <p class="wide-card-h1" style="color: aliceblue; font-size: medium">💪 ${it.onTheJobTrainingNeeded}</p>
             </div>
-        `)
+        `
+        });
     }
 
     // main
     mainScreen();
-    educationReqs = parseEducationCSV("education")
-    educationAttainments = parseEducationCSV("education_attainment")
-    console.log(educationReqs)
+    educationReqs = parseCSV("education", ["title", "code", "educationNeeded", "workExperienceNeeded", "onTheJobTrainingNeeded"])
+    educationAttainments = parseCSV("educational_attainment", ["title", "code", "lt_hs_dip", "hs_dip", "some_college", "assoc_degree", "bach_degree", "master_degree", "doctorate_degree"])
 </script>
 <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 </body>
