@@ -161,12 +161,6 @@ h1 {
 .h-100pc {
     height: 100%;
 }
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -182,6 +176,12 @@ h1 {
     z-index: 1;
     top: -5px;
     left: 105%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: white;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
