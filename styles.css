@@ -2,6 +2,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 .hide-scroll-bar::-webkit-scrollbar {
     display: none;
 }
@@ -29,6 +30,7 @@ h1 {
     box-shadow: 0 12px 24px #000070;
     transform: scale(1.05);
 }
+
 .card-body {
     background-color: #4527a0;
     padding: 10px;
@@ -94,6 +96,13 @@ h1 {
     box-shadow: 0 1px #5e92f3, 0 2px #003c8f, 0 3px #5e92f3, 0 4px #003c8f, 0 5px #000070, 0 7px 7px #4527a0;
 }
 
+.rounded-input {
+    padding: 2px;
+    border: solid 2px #5e92f3;
+    border-radius: 15px;
+    height: 10px;
+}
+
 .new-input-aqua {
     background-color: #5e92f3;
     box-shadow: 0 1px #5e92f3, 0 2px #003c8f, 0 3px #5e92f3, 0 4px #003c8f, 0 5px #000070, 0 7px 7px #4527a0;
@@ -111,6 +120,26 @@ h1 {
     background-color: #4527a0;
     border-radius: 15px;
     width: 50%;
+}
+
+#filters {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    background-color: rgba(22,22,22,0.5); /* complimenting your modal colors */
+}
+#filters:target {
+    visibility: visible;
+    display: block;
+}
+.reveal-modal {
+    position: relative;
+    margin: 0 auto;
+    top: 25%;
+    z-index: 1;
 }
 
 /* a key for what emojis mean */
@@ -158,4 +187,37 @@ h1 {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #5e92f3;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    /* a color bit darker that 5e92f3 */
+    background-color: #003c8f;
+    border-radius: 15px 15px 0 0;
+    color: white;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    z-index: 1;
+    position: relative;
+    border-radius: 0 0 15px 15px;
 }

@@ -17,8 +17,96 @@
 <body style="background-color: #003c8f">
 
 <script charset="UTF-8" src="scripts/fuzz.js"></script>
+<script>
+    let zipChecked = true;
+    let gradChecked = true;
+    let studentSizeChecked = false;
+</script>
 
 <div id="main"></div>
+<!-- A filters list for the colleges, in the middle of the page -->
+<div id="filters" style="z-index: 1;">
+    <div id="reveal-filters" class="reveal-modal"
+         style="background-color: white; width: 50%; border-radius: 15px; padding: 20px">
+        <a href="#" onclick="loadSchools()">Close</a>
+        <h1 class="wide-card-h1" style="font-size: xxx-large">School Filters</h1>
+        <!-- First option: zip code and distance -->
+        <div>
+            <div class="row">
+                <h2 class="wide-card-h2" style="font-size: x-large">Location</h2>
+                <input type="checkbox" style="height: 30px" checked onclick="zipChecked = !zipChecked">
+            </div>
+            <!-- A row with a text hint and then the textarea -->
+            <div class="row">
+                <h1 style="font-size: 20px">Zip code: </h1>
+                <textarea id="schoolZipTextArea" name="school_zip" rows="1" class="resize-none rounded-input"
+                          placeholder="Zip Code"
+                          style="font-size: 12px; margin-left: 10px; height: fit-content; width: 50px">94539</textarea>
+                <h1 style="font-size: 20px; margin-left: 10px">Distance: </h1>
+                <textarea id="schoolDistanceTextArea" name="school_distance" rows="1" class="resize-none rounded-input"
+                          placeholder="Distance"
+                          style="font-size: 12px; margin-left: 10px; height: fit-content; width: 50px">100</textarea>
+                <h1 style="font-size: 15px; margin-top: 5px">miles</h1>
+            </div>
+        </div>
+        <!-- Second option: graduation rate -->
+        <div>
+            <div class="row">
+                <h2 class="wide-card-h2" style="font-size: x-large">Graduation Rate</h2>
+                <input type="checkbox" style="height: 30px" checked onclick="gradChecked = !gradChecked">
+            </div>
+            <!-- A row with a text hint and then the textarea -->
+            <div class="row">
+                <h1 style="font-size: 20px">Minimum: </h1>
+                <textarea id="schoolGradMinTextArea" name="school_grad_min" rows="1" class="resize-none rounded-input"
+                          placeholder="Minimum"
+                          style="font-size: 12px; margin-left: 10px; height: fit-content; width: 50px">90</textarea>
+                <h1 style="font-size: 20px; margin-left: 10px">Maximum: </h1>
+                <textarea id="schoolGradMaxTextArea" name="school_grad_max" rows="1" class="resize-none rounded-input"
+                          placeholder="Maximum"
+                          style="font-size: 12px; margin-left: 10px; height: fit-content; width: 50px">100</textarea>
+            </div>
+        </div>
+        <!-- Third option: student size -->
+        <div>
+            <div class="row">
+                <h2 class="wide-card-h2" style="font-size: x-large">Student Size</h2>
+                <input type="checkbox" style="height: 30px" onclick="studentSizeChecked = !studentSizeChecked">
+            </div>
+            <!-- A row with a text hint and then the textarea -->
+            <div class="row">
+                <h1 style="font-size: 20px">Minimum: </h1>
+                <textarea id="schoolSizeMinTextArea" name="school_size_min" rows="1" class="resize-none rounded-input"
+                          placeholder="Minimum"
+                          style="font-size: 12px; margin-left: 10px; height: fit-content; width: 50px">1000</textarea>
+                <h1 style="font-size: 20px; margin-left: 10px">Maximum: </h1>
+                <textarea id="schoolSizeMaxTextArea" name="school_size_max" rows="1" class="resize-none rounded-input"
+                          placeholder="Maximum"
+                          style="font-size: 12px; margin-left: 10px; height: fit-content; width: 50px">10000</textarea>
+            </div>
+        </div>
+        <!-- Fourth option: sort by -->
+        <div>
+            <div class="row">
+                <h2 class="wide-card-h2" style="font-size: x-large">Sort By</h2>
+            </div>
+            <!-- A row with a text hint and then the textarea -->
+            <div class="row">
+                <h1 style="font-size: 20px">Sort by: </h1>
+                <select id="schoolSortBySelect" name="school_sort_by" class="rounded-input"
+                        style="font-size: 12px; margin-left: 10px; height: fit-content; width: fit-content">
+                    <option value="none" selected>None</option>
+                    <option value="latest.cost.avg_net_price.overall:asc">Cost ascending</option>
+                    <option value="latest.cost.avg_net_price.overall:desc">Cost descending</option>
+                    <option value="latest.completion.rate_suppressed.overall:desc">Graduation rate descending</option>
+                    <option value="latest.completion.rate_suppressed.overall:asc">Graduation rate ascending</option>
+                    <option value="latest.student.size:asc">Student size ascending</option>
+                    <option value="latest.student.size:desc">Student size descending</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="jobreqs">
     <div style="display:flex; flex-direction: row; justify-content: left; align-items: center;">
         <h1 style="font-size: 60px; margin-left: 10px; color: black" class="new-text-aqua w-100 pt-2">Education
@@ -85,7 +173,191 @@
         `
     }
 
-    function loadJSON(name) {
+    function makeAdditionalResourcesCard(name, desc, link, imageLink) {
+        return `
+        <div class="card" style="margin: 12px; border-radius: 15px; border: none; width: fit-content">
+            <img class="card-img-top" src="${imageLink}" style="height: 180px;" onerror="this.onerror=null; this.src='assets/default.png'">
+            <div class="card-body" style="height: 10rem;">
+                <h5 class="card-title" style="color: white;">${name}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">${desc}</h6>
+            </div>
+            <div class="card-body card-footer" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-color: #7953d2">
+                <a href="${link}" class="btn btn-primary">Visit</a>
+            </div>
+        </div>
+        `
+    }
+
+    function makeSchoolCard(name, city, state, url, programs, cost, gradRate, schoolSize, predominantDegree) {
+        let div = document.getElementById("college-cards");
+        gradRate = gradRate * 100;
+
+        if (cost == null) {
+            cost = "Cost N/A";
+        } else {
+            cost = "$" + cost.toLocaleString();
+        }
+
+        // get the predominant degree
+        let degree = "";
+        if (predominantDegree === 1) {
+            degree = "Certificate";
+        } else if (predominantDegree === 2) {
+            degree = "Associate";
+        } else if (predominantDegree === 3) {
+            degree = "Bachelor's";
+        } else if (predominantDegree === 4) {
+            degree = "Graduate";
+        } else {
+            degree = "N/A";
+        }
+
+        let programsStr = "<ol style='background-color: #5e92f3'>";
+        for (let i = 0; i < programs.length; i++) {
+            programsStr += "<li>" + (i + 1) + ". " + programs[i]["title"] + "</li>";
+        }
+        programsStr += "</ol>";
+
+        div.innerHTML += `
+         <div class="card" style="margin: 12px; border-radius: 15px; border: none; width: fit-content">
+            <div class="card-body" style="background-color: #4527a0; border-top-left-radius: 15px; border-top-right-radius: 15px">
+                <h5 class="card-title" style="color: white;">${name}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">${city}, ${state}</h6>
+                <!-- grad rate -->
+                <div class="wide-card" style="width: 100%; background-color: #7953d2">
+                     <h5 style="color: white">Graduation rate: ${gradRate}%</h5>
+                     <br/>
+                     <h5 style="color: white">Student size: ${schoolSize.toLocaleString()}</h5>
+                     <br/>
+                     <h5 style="color: white">Predominant degree: ${degree}</h5>
+                </div>
+                <button type="button" class="collapsible" style="box-shadow: 0 12px 24px #000070;">View Programs</button>
+                <div class="content" style="background-color: #5e92f3">
+                  <p>${programsStr}</p>
+                </div>
+            </div>
+            <div class="card-body card-footer" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-color: #7953d2">
+                <a href="${url}" class="btn btn-primary">Visit</a>
+                <a class="btn btn-secondary">${cost}</a>
+            </div>
+        </div>
+        `
+    }
+
+    function loadSchools() {
+        // add a drop down to add parameters
+        let fields = "latest.completion.rate_suppressed.overall,id,school.name,school.city,school.state,latest.student.size,school.branches,school.locale,school.ownership,school.degrees_awarded.predominant,latest.academics.program_reporter.programs_offered,latest.cost.avg_net_price.overall,latest.completion.consumer_rate,latest.earnings.10_yrs_after_entry.median,latest.earnings.6_yrs_after_entry.percent_greater_than_25000,school.under_investigation,latest.completion.outcome_percentage_suppressed.all_students.8yr.award_pooled,latest.completion.rate_suppressed.four_year_200percent,latest.completion.rate_suppressed.lt_four_year,latest.programs.cip_4_digit,school.school_url";
+        let link = "https://api.data.gov/ed/collegescorecard/v1/schools?api_key=kP0ic0dRVKUPwH8VZT0izUGMFpL7fh1SBWPdwid1"
+        if (zipChecked) {
+            let zip = document.getElementById("schoolZipTextArea").value;
+            let distance = document.getElementById("schoolDistanceTextArea").value;
+            link += "&_zip=" + zip + "&_distance=" + distance + "mi";
+        }
+        if (gradChecked) {
+            let min = document.getElementById("schoolGradMinTextArea").value;
+            let max = document.getElementById("schoolGradMaxTextArea").value;
+            // divide by 100 because the api uses a decimal
+            link += "&latest.completion.rate_suppressed.overall__range=" + min / 100 + ".." + max / 100;
+        }
+        if (studentSizeChecked) {
+            let min = document.getElementById("schoolSizeMinTextArea").value;
+            let max = document.getElementById("schoolSizeMaxTextArea").value;
+            link += "&latest.student.size__range=" + min + ".." + max;
+        }
+
+        // get sort by data
+        let sortBy = document.getElementById("schoolSortBySelect").value;
+        if (sortBy !== "none") {
+            link += "&_sort=" + sortBy;
+        }
+
+        link += "&_fields=" + fields;
+
+        console.log(link);
+
+        fetch(link)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+
+                // check if it's an error
+                if (data["errors"] != null) {
+                    console.log("error")
+                    alert("Error: " + data["errors"]["message"]);
+                    return;
+                }
+                // loop data.results
+                let schools = data.results;
+
+                // clear the div
+                let div = document.getElementById("college-cards");
+                div.innerHTML = "";
+
+                for (let i = 0; i < schools.length; i++) {
+                    let school = schools[i];
+                    let programs = school["latest.programs.cip_4_digit"];
+                    // remove items with duplicate ids
+                    let uniquePrograms = [];
+                    let ids = [];
+                    for (let j = 0; j < programs.length; j++) {
+                        let program = programs[j];
+                        // TODO: while checking id, check if program is in user selected filter of wanted programs
+                        if (!ids.includes(program["code"])) {
+                            ids.push(program["code"]);
+                            uniquePrograms.push(program);
+                        }
+                    }
+
+                    let url = school["school.school_url"];
+                    // add https:// if not present
+                    if (!url.startsWith("https://")) {
+                        url = "https://" + url;
+                    }
+                    // remove trailing slash
+                    if (url.endsWith("/")) {
+                        url = url.substring(0, url.length - 1);
+                    }
+                    // round school["latest.completion.rate_suppressed.overall"] to 4 decimal places
+                    let gradRate = school["latest.completion.rate_suppressed.overall"];
+                    gradRate = Math.round(gradRate * 10000) / 10000;
+                    console.log(gradRate);
+                    makeSchoolCard(school["school.name"], school["school.city"], school["school.state"], url, uniquePrograms, school["latest.cost.avg_net_price.overall"], gradRate, school["latest.student.size"], school["school.degrees_awarded.predominant"]);
+
+                    // add the collapsible
+                    var coll = document.getElementsByClassName("collapsible");
+                    var s;
+
+                    for (s = 0; s < coll.length; s++) {
+                        coll[s].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.display === "block") {
+                                content.style.display = "none";
+                            } else {
+                                content.style.display = "block";
+                            }
+                        });
+                    }
+                }
+                console.log(data)
+            })
+    }
+
+    function loadAdditionalResources() {
+        let div = document.getElementById("additional-resources");
+        div.innerHTML = "";
+
+        // Indeed
+        div.innerHTML += makeAdditionalResourcesCard("Indeed", "Indeed is a free service to job seekers, where you can upload a resume, create job alert emails, search for jobs, save them and apply to them directly.", "https://www.indeed.com/",
+            "data:image/png;base64,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");
+        // Zip recruiter
+        div.innerHTML += makeAdditionalResourcesCard("ZipRecruiter", "ZipRecruiter was founded to make meaningful connections between job seekers and employers. What started as a way to help small businesses find great candidates has grown into a leading online employment marketplace that connects millions of job seekers with companies of all sizes.", "https://www.ziprecruiter.com/",
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOMAAAB+CAMAAADhqFbjAAAAolBMVEX///+y5SI0PkUoNDz7+/ut5AAsNz+prK4hLjfLzc4eLDUxO0IAEyGsrrEkMTlfZWqKjpHb3N3z++G45zvq6+vI7HgaKDLS09QNICt7gIN0eX3m9sPj9rtLUlj5/fFFTVMAGCRqcHTV8ZqgpKc8RUwAAAC1t7nAwsP1++e66EWSlpnc86zF62sAAA7B6l1WXWPt+dUABxrQ74e+6VHS8JHa8qMEuhF0AAAH+ElEQVR4nO2abVujOhCGaQgBEoFgI4XWviAsKHZbV9f//9fOJLwUWtS6ep1dvfJ8sAWSITczmUyohqGlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpfVva3V5rNu/PaTP1upueqL7vz2oT9a1NTmWdfW3B/XJ0ozfQ5rxe0gzfg9pxj8Q/qyRfZ7eZLQjc6i4MoyCxKkYtYd/RLUoWSfueJt3SQQxKj9m4m1GBw3lZIagBMV81B6+aNsx4mz2xcdGB6piRMyPPavFe/zI5Nj9zAh/wkc6GpWSkVHpRx9ak8j70OhAgYnQr3cxikHrxXT7eII4meweJ7+7NmU67xSw2o84oA4dd5FkzDPPszMeIIIYCv8ErKcicmg9L7DI1m9bw1VR9IZ2O51MT90IjrTurOux/hyeKVnCDUXFy/HkAoxs2TxIFxDN7L1QxwYLntWIFY3NtxlL10vErDtcTB5vb0YgnxaX1s1I94xCHMav36bPKDv4yWclWpH6iLzNmImsEm53uACS8fm4GmMsYxmpYyGKcQcyYHQ3yJzjkzYj3doTrwwez01G+lMNj5oUWViUh2bvYwzXMBv9SpmdeZ4HdsKigCcmSj5PqsbugLGIkZk0Hfh8XvXubcyKKkm4OoNtzxYGLjNeGQIs114QtvpWn5B/9wyxrGgvhwVY5EVtUcDp0MCuzTmelW7P2+9ixClMRj9QI8b8gm7gVnYc5XgWONT3qb8vjxnxksBDkUPgOXWgjRm0E0Wekb2cpQ3D/Ul/umLuRzQ33DjapDXEDxrP4Vn8ohcJDuPIkQnPp/RCLlq4Wkeqf6DuGqLol20kDFbloxT8LsYEJiNBdXBg7iBfMhIUlRFhalkhNGsZQyyECO01gS4whnDvMBPlOSGmXy/nsxxWFuJDL7apjDBGPk8dRvy14ZoQ3jUjBHoCTSO4aITUJJKREBJxWRhQYjJpkcRFHWNggYIF9gFGbwM3yBs39BgRZc4y4UnuI7Qpm/WRmKYTbSIYVATjxYCI+Aygl4Sp7C+QCaMNeLJ2nL2QjHDo5/MkGWV0OA6DNM3hicBHAJ4PKFwrhSj2PnPCZh7BU0iT+Z8zzpCcjHYbtz1G5CQhNvAMQpmhps5hjNWlTgwERgaVSqX6uWtGOVYxwXKYijD0QE5rmcxoEMoc8gIjBEaYwnI7gwDBcp4rO9BoSeSMV4xkWYqTLHQ+o4CZhaKueuszynHUTRiK3ZqRNCVRnsEtMRAvm46ZyXzwG3iE1nlBjUn5Magd8AKj0eRV1QsHhDmNxRKCftb4cWxhOZ8RYgPyTXc4YGwtF5FMMKrO4Vm1J8isc4cLy1oazkIpTwW0ZyJ/3rOuGJu6+2VGkbaMs5yR/ay2WOQM6kXJSEerjYX1fLs7QZxMpvfGkBGiDZnLw2PqM5L2pLhAZN7l1UI6XvWwfenRfK0EoV0ZmY/i/lYCGA+10RmMJRta5IoxHi1qF9bTaC03sXYDxgJWDYYOtUOfkeXdSWBMO0YMs8dUns9k77aqJ4TOjcpBm541yUjaIDmL8cQiMLJ8lPFhjK+h7L0rd2UGifv1zSBWu5Fu+n40wqhJUuBHtg467blRnfqRpOcwNrVcSY4tAqM5vg8ynqH8Bg3p1N+r1QFobfbzzQljG8K2WsgONUDqICLTKoyazOWC2UrNx+RPGA/z0UxF3+IrjMZKajE5UFrWszrXa5PAJrmrOkcYT/JqwxhCxqO8zqttHOH6St7O1VPGELxeZ2HIYSYf5lXU5VUUDS2+wtjo/qpB3N2f/Gil3gPkXjjrJIbrI1Xrowt7WYIGtRykFnQRqoxlBmpwYr5RW7J2fYQ9mixn+4wGrCvEg5MC0ohT9hkTH6ktt1ofSZ0CBf8lG5/BaBgN4+LkgsRRLy46gW/6jDCSNdQ5CJ5/XA4YZbKTaUfsHWTus7LMoCqJ5JIp35UQknIeRDQ5YvTAAEoyDisykfmsY5SpiqEqq7y6zllWZWHDl4jj8xh/y3C1pqcXMPeP3uf4A0YW+FCvqsoz6urVJo4yeDykkMUI1KImYyaU6LlKqDOk6lWftPXqgRGnEasNkmhmNPWqGn4B5phvxnW9Co3AKCRvszzTj4Z857Eb+XUV8w0dasPVviNuanLP3VMfqk26VpkX/6BRl8VRHMXyZQeGXYZvmj4lbTkpEiR7mRGCmQ77jrhfYDAowE2H1puUGWxx6v0ZTiIHLmzUviNbU0dZTGXMwr4jDt5kXO2sycPYBRe2cQPZbn1S1IwZ7O2SIEjsJolknle0d3Mzz87qVOglaZBkhxck2M2SYD/PpFsFNOuvJW4236dJuzW01R1Vn4KnQcrrjUEoD6C/sgj7R/uFly99ba3pKONrqhllchNv3uB01/5KL3xaXHdGcP/g/LGCG2931nQxWDPOUMv4z2u1uP/9uJV169N2+3hzfXl+1y/CuNhOu2Kn+dzdn+vOr8C4egaou6ft1ePN/dNkevMsHfoErNvznPkFGFdX1vZ+cVl77cq6q5eO1cP17xdy7LG+AOPldHs4eLSeDsvjwjrrf3Syi/jHP8+4O8y831bv4Pk8RvmW5R/8vbGvh2nvJ6p7a7s6fD+P8QtodddjXFiP3XdgHP1N5ytq1dtnXPd/dly8u+T5CnqYTr5NfL6ka+v7/T/HsVaPu923DFAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS2t/1//ARMPsKRNObPGAAAAAElFTkSuQmCC")
+        // Youtube video
+        div.innerHTML += makeAdditionalResourcesCard("Writing a strong college admissions essay", "Learn about the elements of a solid admissions essay. Then, go to https://www.khanacademy.org/college-careers-more/college-admissions for Khan Academy's complete college admissions and financial aid resource!", "https://www.youtube.com/watch?v=tRC0HZyNCW4", "https://i.ytimg.com/an_webp/tRC0HZyNCW4/mqdefault_6s.webp?du=3000&sqp=CML2mJ0G&rs=AOn4CLD4deO3fUmcpxJZsDP5vvWEOeMwSQ")
+    }
+
+    function loadJobPlacementServices(name) {
         name = "data/Job Placement Services/" + name + ".json";
         fetch(name)
             .then(response => response.json())
@@ -165,18 +437,37 @@
        </div>
 
        <div id="cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar" style="padding-bottom: 40px"></div>
+
+       <div style="display:flex; flex-direction: row; justify-content: left; align-items: start;">
+         <h1 style="font-size: 60px; margin-left: 10px; color: black; width: 1000px">Schools</h1>
+          <div style="display:flex; width:52%; flex-direction: row; justify-content: right; align-items: center; gap: 10px; margin-top: 20px; margin-right: 10px">
+             <!-- filters button -->
+             <a class="new-text-aqua new-box-aqua p-2 ml-3 btn" style="height: 50px; font-size: larger;" href="#filters">Filters</a>
+          </div>
+       </div>
+
+       <div id="college-cards" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar" style="padding-bottom: 40px"></div>
+
+       <div style="display:flex; flex-direction: row; justify-content: left; align-items: start;">
+         <h1 style="font-size: 60px; margin-left: 10px; color: black; width: 1000px">Additional Resources</h1>
+       </div>
+
+       <div id="additional-resources" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 hide-scroll-bar" style="padding-bottom: 40px"></div>
       `;
 
         document.getElementById('citypicker').onchange = function () {
             console.log("changed");
             clearCards();
-            loadJSON(this.value);
+            loadJobPlacementServices(this.value);
         }
 
-        loadJSON("Fremont");
+        loadJobPlacementServices("Fremont");
+        loadSchools();
+        loadAdditionalResources();
     }
 
     function loadEducationRequirements() {
+        console.log("loading education requirements");
         // get the main div
         let div = document.getElementById("jobreqs");
         let main = document.getElementById("main");
@@ -193,7 +484,6 @@
                     educationAttainments.sort((a, b) => -(fuzzball.partial_token_sort_ratio(a.title, val) - fuzzball.partial_token_sort_ratio(b.title, val)))
                     document.getElementById("olasdflk").innerHTML = arrToLis(educationReqs, (it, idx) => {
                         let tooltipInfo = educationAttainments[idx];
-                        console.log(tooltipInfo);
                         return `
                         <div class="wide-card ${idx === 0 ? "text-2xl" : idx === 1 ? "text-xl" : ""}">
                             <!-- ${it.title} | ${it.code} | ${it.educationNeeded} | ${it.workExperienceNeeded} | ${it.onTheJobTrainingNeeded} -->
@@ -258,6 +548,20 @@
     mainScreen();
     educationReqs = parseCSV("education", ["title", "code", "educationNeeded", "workExperienceNeeded", "onTheJobTrainingNeeded"])
     educationAttainments = parseCSV("educational_attainment", ["title", "code", "lt_hs_dip", "hs_dip", "some_college", "assoc_degree", "bach_degree", "master_degree", "doctorate_degree"])
+
+    // get all textareas
+    let textareas = document.getElementsByTagName("textarea");
+    // add the same event listener to all textareas
+    let listener = (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            return false;
+        }
+    }
+
+    for (let i = 0; i < textareas.length; i++) {
+        textareas[i].addEventListener("keydown", listener);
+    }
 </script>
 <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 </body>
